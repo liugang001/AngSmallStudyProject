@@ -93,9 +93,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
-/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _app_routes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.routes */ "./src/app/app.routes.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
+/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
+/* harmony import */ var _images_images_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./images/images.component */ "./src/app/images/images.component.ts");
+/* harmony import */ var _texts_texts_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./texts/texts.component */ "./src/app/texts/texts.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _common_error_error_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./common/error/error.component */ "./src/app/common/error/error.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -107,24 +115,262 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
+
+
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-                _main_main_component__WEBPACK_IMPORTED_MODULE_3__["MainComponent"],
-                _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__["NavbarComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
+                _main_main_component__WEBPACK_IMPORTED_MODULE_7__["MainComponent"],
+                _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_8__["NavbarComponent"],
+                _images_images_component__WEBPACK_IMPORTED_MODULE_9__["ImagesComponent"],
+                _texts_texts_component__WEBPACK_IMPORTED_MODULE_10__["TextsComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
+                _common_error_error_component__WEBPACK_IMPORTED_MODULE_12__["ErrorComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"],
+                _app_routes__WEBPACK_IMPORTED_MODULE_5__["Routing"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.routes.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.routes.ts ***!
+  \*******************************/
+/*! exports provided: Routing */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Routing", function() { return Routing; });
+/* harmony import */ var _images_images_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/images.component */ "./src/app/images/images.component.ts");
+/* harmony import */ var _texts_texts_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./texts/texts.component */ "./src/app/texts/texts.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _common_error_error_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/error/error.component */ "./src/app/common/error/error.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+//创建路由配置文件
+
+
+
+
+
+var appRoutes = [
+    { path: "", redirectTo: "/home", pathMatch: "full" },
+    { path: "home", component: _home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] },
+    { path: "image", component: _images_images_component__WEBPACK_IMPORTED_MODULE_0__["ImagesComponent"] },
+    { path: "text", component: _texts_texts_component__WEBPACK_IMPORTED_MODULE_1__["TextsComponent"] },
+    { path: "**", component: _common_error_error_component__WEBPACK_IMPORTED_MODULE_3__["ErrorComponent"] }
+];
+var Routing = _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(appRoutes);
+
+
+/***/ }),
+
+/***/ "./src/app/common/error/error.component.css":
+/*!**************************************************!*\
+  !*** ./src/app/common/error/error.component.css ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/common/error/error.component.html":
+/*!***************************************************!*\
+  !*** ./src/app/common/error/error.component.html ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <p>\n    未找到任何路由信息\n  </p>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/common/error/error.component.ts":
+/*!*************************************************!*\
+  !*** ./src/app/common/error/error.component.ts ***!
+  \*************************************************/
+/*! exports provided: ErrorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrorComponent", function() { return ErrorComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ErrorComponent = /** @class */ (function () {
+    function ErrorComponent() {
+    }
+    ErrorComponent.prototype.ngOnInit = function () {
+    };
+    ErrorComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-error',
+            template: __webpack_require__(/*! ./error.component.html */ "./src/app/common/error/error.component.html"),
+            styles: [__webpack_require__(/*! ./error.component.css */ "./src/app/common/error/error.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ErrorComponent);
+    return ErrorComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.css":
+/*!*****************************************!*\
+  !*** ./src/app/home/home.component.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.html":
+/*!******************************************!*\
+  !*** ./src/app/home/home.component.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n    <div>\r\n        这是HOME主页面\r\n    </div>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/home/home.component.ts ***!
+  \****************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HomeComponent = /** @class */ (function () {
+    function HomeComponent() {
+    }
+    HomeComponent.prototype.ngOnInit = function () {
+    };
+    HomeComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-home',
+            template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
+            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HomeComponent);
+    return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/images/images.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/images/images.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "p.imgName{margin-bottom:0;font-size:16px;padding:5px 0 0;}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/images/images.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/images/images.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" >\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" >\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" >\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" >\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/images/images.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/images/images.component.ts ***!
+  \********************************************/
+/*! exports provided: ImagesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImagesComponent", function() { return ImagesComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ImagesComponent = /** @class */ (function () {
+    function ImagesComponent() {
+    }
+    ImagesComponent.prototype.ngOnInit = function () {
+    };
+    ImagesComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-images',
+            template: __webpack_require__(/*! ./images.component.html */ "./src/app/images/images.component.html"),
+            styles: [__webpack_require__(/*! ./images.component.css */ "./src/app/images/images.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ImagesComponent);
+    return ImagesComponent;
 }());
 
 
@@ -149,7 +395,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n"
+module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
@@ -201,7 +447,7 @@ var MainComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".navbar{margin-bottom:10px;}\r\n"
 
 /***/ }),
 
@@ -212,7 +458,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\"\n              aria-expanded=\"false\" aria-controls=\"navbar\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">Project name</a>\n    </div>\n    <div id=\"navbar\" class=\"collapse navbar-collapse\">\n      <ul class=\"nav navbar-nav navbar-left\">\n        <li class=\"active\"><a href=\"#\">Home</a></li>\n        <li><a href=\"#about\">About</a></li>\n        <li><a href=\"#contact\">Contact</a></li>\n      </ul>\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li><a href=\"javascript:;\">登录</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\"\n              aria-expanded=\"false\" aria-controls=\"navbar\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">AngularSalllProject</a>\n    </div>\n    <div id=\"navbar\" class=\"collapse navbar-collapse\">\n      <ul class=\"nav navbar-nav navbar-left\">\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['home']\">Home</a></li>\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['image']\">Images</a></li>\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['text']\">Texts</a></li>\n      </ul>\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li><a href=\"javascript:;\">登录</a></li>\n        <li><a href=\"javascript:;\">注册</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n"
 
 /***/ }),
 
@@ -251,6 +497,69 @@ var NavbarComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], NavbarComponent);
     return NavbarComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/texts/texts.component.css":
+/*!*******************************************!*\
+  !*** ./src/app/texts/texts.component.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "p{color:red;}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/texts/texts.component.html":
+/*!********************************************!*\
+  !*** ./src/app/texts/texts.component.html ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n    <p>这是文字内容</p>\n    <p>这是文字内容</p>\n    <p>这是文字内容</p>\n    <p>这是文字内容</p>\n    <p>这是文字内容</p>\n    <p>这是文字内容</p>\n    <p>这是文字内容</p>\n    <p>这是文字内容</p>\n    <p>这是文字内容</p>\n    <p>这是文字内容</p>\n    <p>这是文字内容</p>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/texts/texts.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/texts/texts.component.ts ***!
+  \******************************************/
+/*! exports provided: TextsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextsComponent", function() { return TextsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TextsComponent = /** @class */ (function () {
+    function TextsComponent() {
+    }
+    TextsComponent.prototype.ngOnInit = function () {
+    };
+    TextsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-texts',
+            template: __webpack_require__(/*! ./texts.component.html */ "./src/app/texts/texts.component.html"),
+            styles: [__webpack_require__(/*! ./texts.component.css */ "./src/app/texts/texts.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], TextsComponent);
+    return TextsComponent;
 }());
 
 

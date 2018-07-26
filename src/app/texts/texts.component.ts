@@ -9,6 +9,7 @@ export class TextsComponent implements OnInit {
 
   title="this is A Book";
   color="green";
+  public dateDay:string=""
   constructor() {
 
   }

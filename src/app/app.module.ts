@@ -14,6 +14,9 @@ import { TextsComponent } from './texts/texts.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './common/error/error.component';
 import { FilterPipe } from './pipe/filter.pipe';
+import { GetdatePipe } from './pipe/getdate.pipe';
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { FilterPipe } from './pipe/filter.pipe';
     TextsComponent,
     HomeComponent,
     ErrorComponent,
-    FilterPipe
+    FilterPipe,
+    GetdatePipe,
   ],
   imports: [
     BrowserModule,

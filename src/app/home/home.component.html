@@ -1,6 +1,6 @@
 <div class="container">
   <div class="mar-content">
-    <form action="#" class="form-inline">
+    <form action="#" class="form-inline" autocomplete="off">
         <div class="form-group">
             <input type="text" class="form-control" name="fang" [(ngModel)]="term">
         </div>
@@ -17,6 +17,7 @@
             <th>姓名</th>
             <th>年龄</th>
             <th>地址</th>
+            <th>日期</th>
           </tr>
       </thead>
       <tbody>
@@ -25,6 +26,7 @@
             <td>{{item.name}}</td>
             <td>{{item.age}}</td>
             <td>{{item.address}}</td>
+            <td>{{1532574917000 | date:'yyyy-MM-dd HH:mm:ss'}}</td>
       </tr>
       </tbody>
     </table>

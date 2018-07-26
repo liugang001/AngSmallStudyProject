@@ -5,11 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterPipe implements PipeTransform {
 
-  transform(arrList: any, term: any): any {
+  transform(arr:any, term: any): any {
       if(term===undefined)return;
-      return arrList.filter(function(list){
-          return list.name.toLowerCase().includes(term.toLowerCase())
+      return arr.filter(function(list){
+           return list.name.toLowerCase().includes(term.toLowerCase())
       })
   }
+
 
 }

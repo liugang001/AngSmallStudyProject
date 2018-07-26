@@ -1,5 +1,55 @@
 <div class="container">
-    <div>
-        这是HOME主页面
-    </div>
+  <div class="mar-content">
+    <form action="#" class="form-inline">
+        <div class="form-group">
+            <input type="text" class="form-control" name="fang" [(ngModel)]="term">
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-danger searchBtn">搜索</button>
+        </div>
+    </form>
+  </div>
+  <div>
+    <table class="table table-bordered">
+      <thead>
+          <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>地址</th>
+          </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of arrList | filter:term;index as i">
+            <td>{{i+1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.age}}</td>
+            <td>{{item.address}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+<div class="container">
+    <table class="table table-bordered">
+      <thead>
+          <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>颜色</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let item of trees;index as i">
+                <td>{{i+1}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.age}}</td>
+                <td>
+                    <span *ngFor="let key of item.color" style="margin-right:10px;">{{key}}</span>
+                </td>
+          </tr>
+      </tbody>
+    </table>
 </div>

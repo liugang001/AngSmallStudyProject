@@ -13,6 +13,7 @@ import { ImagesComponent } from './images/images.component';
 import { TextsComponent } from './texts/texts.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './common/error/error.component';
+import { FilterPipe } from './pipe/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ErrorComponent } from './common/error/error.component';
     ImagesComponent,
     TextsComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

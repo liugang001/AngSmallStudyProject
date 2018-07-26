@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TextsComponent implements OnInit {
 
-  constructor() { }
+  title="this is A Book";
+  color="green";
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

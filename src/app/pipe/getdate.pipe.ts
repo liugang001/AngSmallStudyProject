@@ -9,5 +9,4 @@ export class GetdatePipe implements PipeTransform {
       return text+345;
   }
 
-
 }

@@ -4,6 +4,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {Routing} from  "./app.routes";
+import {CommonModule} from '@angular/common';
+import {LazyLoadImageModule} from "ng-lazyload-image";
 
 
 import { AppComponent } from './app.component';
@@ -32,6 +34,8 @@ import { GetdatePipe } from './pipe/getdate.pipe';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
+    LazyLoadImageModule,
     HttpClientModule,
     FormsModule,
     RouterModule,

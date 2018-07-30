@@ -10,9 +10,7 @@ export class LoggingService {
       console.log('loginning common about ME')
   }
   constructor(private Http:HttpClient) {}
-  getJsonData(){
+  public getJsonData(){
       return this.Http.get("../../assets/fake/data.json")
   }
-
-
 }

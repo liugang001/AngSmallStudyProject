@@ -105,12 +105,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _common_error_error_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./common/error/error.component */ "./src/app/common/error/error.component.ts");
 /* harmony import */ var _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pipe/filter.pipe */ "./src/app/pipe/filter.pipe.ts");
+/* harmony import */ var _pipe_getdate_pipe__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pipe/getdate.pipe */ "./src/app/pipe/getdate.pipe.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -138,7 +140,8 @@ var AppModule = /** @class */ (function () {
                 _texts_texts_component__WEBPACK_IMPORTED_MODULE_10__["TextsComponent"],
                 _home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
                 _common_error_error_component__WEBPACK_IMPORTED_MODULE_12__["ErrorComponent"],
-                _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_13__["FilterPipe"]
+                _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_13__["FilterPipe"],
+                _pipe_getdate_pipe__WEBPACK_IMPORTED_MODULE_14__["GetdatePipe"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -272,7 +275,7 @@ module.exports = ".mar-content{margin:20px 0;}\r\n.searchBtn{margin-left:10px;}\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <div class=\"mar-content\">\r\n    <form action=\"#\" class=\"form-inline\" autocomplete=\"off\">\r\n        <div class=\"form-group\">\r\n            <input type=\"text\" class=\"form-control\" name=\"fang\" [(ngModel)]=\"term\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <button type=\"button\" class=\"btn btn-danger searchBtn\">搜索</button>\r\n        </div>\r\n    </form>\r\n  </div>\r\n  <div>\r\n    <table class=\"table table-bordered\">\r\n      <thead>\r\n          <tr>\r\n            <th>编号</th>\r\n            <th>姓名</th>\r\n            <th>年龄</th>\r\n            <th>地址</th>\r\n            <th>日期</th>\r\n          </tr>\r\n      </thead>\r\n      <tbody>\r\n      <tr *ngFor=\"let item of arrList | filter:term;index as i\">\r\n            <td>{{i+1}}</td>\r\n            <td>{{item.name}}</td>\r\n            <td>{{item.age}}</td>\r\n            <td>{{item.address}}</td>\r\n            <td>{{1532574917000 | date:'yyyy-MM-dd HH:mm:ss'}}</td>\r\n      </tr>\r\n      </tbody>\r\n    </table>\r\n  </div>\r\n\r\n</div>\r\n<div class=\"container\">\r\n    <table class=\"table table-bordered\">\r\n      <thead>\r\n          <tr>\r\n            <th>编号</th>\r\n            <th>姓名</th>\r\n            <th>年龄</th>\r\n            <th>颜色</th>\r\n          </tr>\r\n      </thead>\r\n      <tbody>\r\n          <tr *ngFor=\"let item of trees;index as i\">\r\n                <td>{{i+1}}</td>\r\n                <td>{{item.name}}</td>\r\n                <td>{{item.age}}</td>\r\n                <td>\r\n                    <span *ngFor=\"let key of item.color\" style=\"margin-right:10px;\">{{key}}</span>\r\n                </td>\r\n          </tr>\r\n      </tbody>\r\n    </table>\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n  <div class=\"mar-content\">\r\n    <form action=\"#\" class=\"form-inline\" autocomplete=\"off\">\r\n        <div class=\"form-group\">\r\n            <input type=\"text\" class=\"form-control\" name=\"fang\" [(ngModel)]=\"term\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <button type=\"button\" class=\"btn btn-danger searchBtn\" (click)=\"startLog()\">搜索</button>\r\n        </div>\r\n    </form>\r\n  </div>\r\n  <div>\r\n    <table class=\"table table-bordered\">\r\n      <thead>\r\n          <tr>\r\n            <th>编号</th>\r\n            <th>姓名</th>\r\n            <th>年龄</th>\r\n            <th>地址</th>\r\n            <th>日期</th>\r\n          </tr>\r\n      </thead>\r\n      <tbody>\r\n      <tr *ngFor=\"let item of arrList | filter:term;index as i\">\r\n            <td>{{i+1}}</td>\r\n            <td>{{item.name}}</td>\r\n            <td>{{item.age}}</td>\r\n            <td>{{item.address}}</td>\r\n            <td>{{1532574917000 | date:'yyyy-MM-dd HH:mm:ss'}}</td>\r\n      </tr>\r\n      </tbody>\r\n    </table>\r\n  </div>\r\n\r\n</div>\r\n<div class=\"container\">\r\n    <table class=\"table table-bordered\">\r\n      <thead>\r\n          <tr>\r\n            <th>编号</th>\r\n            <th>姓名</th>\r\n            <th>年龄</th>\r\n            <th>颜色</th>\r\n          </tr>\r\n      </thead>\r\n      <tbody>\r\n          <tr *ngFor=\"let item of trees;index as i\">\r\n                <td>{{i+1}}</td>\r\n                <td>{{item.name}}</td>\r\n                <td>{{item.age}}</td>\r\n                <td>\r\n                    <span *ngFor=\"let key of item.color\" style=\"margin-right:10px;\">{{key}}</span>\r\n                </td>\r\n          </tr>\r\n      </tbody>\r\n    </table>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -287,6 +290,7 @@ module.exports = "<div class=\"container\">\r\n  <div class=\"mar-content\">\r\n
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _service_logging_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../service/logging.service */ "./src/app/service/logging.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -297,17 +301,12 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent() {
+    function HomeComponent(LoginMethod) {
+        this.LoginMethod = LoginMethod;
         this.term = "";
-        this.arrList = [
-            { name: "gang", age: 22, address: "四川省" },
-            { name: "reng", age: 26, address: "江苏省" },
-            { name: "zhang", age: 23, address: "安徽省" },
-            { name: "qing", age: 22, address: "广东省" },
-            { name: "zheng", age: 27, address: "河北省" },
-            { name: "heng", age: 24, address: "山西省" }
-        ];
+        this.arrList = [];
         this.trees = [
             { name: "wang", age: "23", color: ['red', 'yellow', 'yellow'] },
             { name: "wang", age: "23", color: ['red', 'blue', 'yellow'] },
@@ -315,15 +314,23 @@ var HomeComponent = /** @class */ (function () {
             { name: "wang", age: "23", color: ['red', 'green', 'yellow'] },
         ];
     }
+    HomeComponent.prototype.startLog = function () {
+        this.LoginMethod.log();
+    };
     HomeComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.LoginMethod.getJsonData().subscribe(function (data) {
+            _this.arrList = data;
+        });
     };
     HomeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-home',
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
-            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
+            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")],
+            providers: [_service_logging_service__WEBPACK_IMPORTED_MODULE_1__["LoggingService"]]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_service_logging_service__WEBPACK_IMPORTED_MODULE_1__["LoggingService"]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -562,6 +569,88 @@ var FilterPipe = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/pipe/getdate.pipe.ts":
+/*!**************************************!*\
+  !*** ./src/app/pipe/getdate.pipe.ts ***!
+  \**************************************/
+/*! exports provided: GetdatePipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GetdatePipe", function() { return GetdatePipe; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var GetdatePipe = /** @class */ (function () {
+    function GetdatePipe() {
+    }
+    GetdatePipe.prototype.transform = function (number, text) {
+        return text + 345;
+    };
+    GetdatePipe = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"])({
+            name: 'getdate'
+        })
+    ], GetdatePipe);
+    return GetdatePipe;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/service/logging.service.ts":
+/*!********************************************!*\
+  !*** ./src/app/service/logging.service.ts ***!
+  \********************************************/
+/*! exports provided: LoggingService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoggingService", function() { return LoggingService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LoggingService = /** @class */ (function () {
+    function LoggingService(Http) {
+        this.Http = Http;
+    }
+    LoggingService.prototype.log = function () {
+        console.log('loginning common about ME');
+    };
+    LoggingService.prototype.getJsonData = function () {
+        return this.Http.get("../../assets/fake/data.json");
+    };
+    LoggingService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], LoggingService);
+    return LoggingService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/texts/texts.component.css":
 /*!*******************************************!*\
   !*** ./src/app/texts/texts.component.css ***!
@@ -569,7 +658,7 @@ var FilterPipe = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "p{color:red;}\r\n"
+module.exports = "p{color:red;font-size:20px;}\r\n"
 
 /***/ }),
 
@@ -580,7 +669,7 @@ module.exports = "p{color:red;}\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n   <p [ngStyle]=\"{color:color}\">{{title | uppercase}}</p>\n   <p>{{title | lowercase}}</p>\n   <p>{{title | slice:1:5}}</p>\n</div>\n"
+module.exports = "<div class=\"container\">\n   <p [ngStyle]=\"{color:color}\">{{title | uppercase}}</p>\n   <p>{{title | lowercase}}</p>\n   <p>{{title | slice:1:5}}</p>\n   <p>{{dateDay | getdate:'我来呢!'}}</p>\n</div>\n"
 
 /***/ }),
 
@@ -609,6 +698,7 @@ var TextsComponent = /** @class */ (function () {
     function TextsComponent() {
         this.title = "this is A Book";
         this.color = "green";
+        this.dateDay = "";
     }
     TextsComponent.prototype.ngOnInit = function () {
     };

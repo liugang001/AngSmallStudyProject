@@ -17,6 +17,8 @@ import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './common/error/error.component';
 import { FilterPipe } from './pipe/filter.pipe';
 import { GetdatePipe } from './pipe/getdate.pipe';
+import { LoginComponent } from './login/login.component';
+import { RoutemainComponent } from './routemain/routemain.component';
 
 
 
@@ -28,9 +30,11 @@ import { GetdatePipe } from './pipe/getdate.pipe';
     ImagesComponent,
     TextsComponent,
     HomeComponent,
+    LoginComponent,
     ErrorComponent,
     FilterPipe,
     GetdatePipe,
+    RoutemainComponent,
   ],
   imports: [
     BrowserModule,

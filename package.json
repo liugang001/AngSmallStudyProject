@@ -32,6 +32,7 @@
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "angular2-baidu-map": "^4.3.2",
     "bootstrap": "^3.3.2",
     "codelyzer": "~4.2.1",
     "iwe7-lazy-load": "^1.0.1",

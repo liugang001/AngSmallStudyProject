@@ -5,6 +5,7 @@ import { TextsComponent } from './texts/texts.component';
 import { HomeComponent } from './home/home.component';
 import {ErrorComponent} from './common/error/error.component';
 import {LoginComponent} from './login/login.component';
+import {LayuiComponent} from './layui/layui.component';
 import {RoutemainComponent} from './routemain/routemain.component';
 import {RouterModule, Routes} from '@angular/router';
 import {ModuleWithProviders} from '@angular/core';
@@ -16,6 +17,7 @@ const appRoutes:Routes=[
       {path:"home",component:HomeComponent},
       {path:"image",component:ImagesComponent},
       {path:"text",component:TextsComponent},
+      {path:"layui",component:LayuiComponent},
    ]},
   {path:"",redirectTo:"/routemain/home",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

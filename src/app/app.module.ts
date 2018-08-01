@@ -6,6 +6,7 @@ import {RouterModule} from '@angular/router';
 import {Routing} from  "./app.routes";
 import {CommonModule} from '@angular/common';
 import {LazyLoadImageModule} from "ng-lazyload-image";
+import {ElModule} from 'element-angular/release/element-angular.module';
 
 
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { FilterPipe } from './pipe/filter.pipe';
 import { GetdatePipe } from './pipe/getdate.pipe';
 import { LoginComponent } from './login/login.component';
 import { RoutemainComponent } from './routemain/routemain.component';
+import { LayuiComponent } from './layui/layui.component';
 
 
 
@@ -35,6 +37,7 @@ import { RoutemainComponent } from './routemain/routemain.component';
     FilterPipe,
     GetdatePipe,
     RoutemainComponent,
+    LayuiComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import { RoutemainComponent } from './routemain/routemain.component';
     HttpClientModule,
     FormsModule,
     RouterModule,
+    ElModule.forRoot(),
     Routing
   ],
   providers: [],

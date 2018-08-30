@@ -21,6 +21,7 @@ import { GetdatePipe } from './pipe/getdate.pipe';
 import { LoginComponent } from './login/login.component';
 import { RoutemainComponent } from './routemain/routemain.component';
 import { LayuiComponent } from './layui/layui.component';
+import { ChildComponent } from './child/child.component';
 
 
 
@@ -38,6 +39,7 @@ import { LayuiComponent } from './layui/layui.component';
     GetdatePipe,
     RoutemainComponent,
     LayuiComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,

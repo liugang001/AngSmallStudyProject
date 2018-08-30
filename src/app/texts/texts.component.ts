@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild} from '@angular/core';
+import {ChildComponent} from '../child/child.component';
 
 @Component({
   selector: 'app-texts',
@@ -7,14 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TextsComponent implements OnInit {
 
+  @ViewChild(ChildComponent) order:ChildComponent;
+
   title="this is A Book";
   color="green";
-  public dateDay:string=""
-  constructor() {
-
+  public dateDay:string;
+  sendEvent(event){
+    console.log(event);
   }
 
-  ngOnInit() {
-  }
+  constructor() {}
+
+  ngOnInit() {}
 
 }

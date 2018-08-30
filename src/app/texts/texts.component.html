@@ -3,4 +3,6 @@
    <p>{{title | lowercase}}</p>
    <p>{{title | slice:1:5}}</p>
    <p>{{dateDay | getdate:'我来呢!'}}</p>
+   <app-child [modelValue]="title" [newModel]="order.name" #order (addEvent)="sendEvent($event)"></app-child>
 </div>
+

@@ -19,6 +19,10 @@ import { FilterPipe } from './pipe/filter.pipe';
 import { GetdatePipe } from './pipe/getdate.pipe';
 import { LoginComponent } from './login/login.component';
 import { RoutemainComponent } from './routemain/routemain.component';
+import { ContentComponent } from './content/content.component';
+import { TitleTextComponent } from './content/title-text/title-text.component';
+
+
 
 
 
@@ -35,6 +39,8 @@ import { RoutemainComponent } from './routemain/routemain.component';
     FilterPipe,
     GetdatePipe,
     RoutemainComponent,
+    ContentComponent,
+    TitleTextComponent,
   ],
   imports: [
     BrowserModule,

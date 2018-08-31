@@ -8,7 +8,7 @@ import {LoginComponent} from './login/login.component';
 import {RoutemainComponent} from './routemain/routemain.component';
 import {RouterModule, Routes} from '@angular/router';
 import {ModuleWithProviders} from '@angular/core';
-
+import {ContentComponent} from './content/content.component';
 
 const appRoutes:Routes=[
   {path:"login",component:LoginComponent},
@@ -16,6 +16,7 @@ const appRoutes:Routes=[
       {path:"home",component:HomeComponent},
       {path:"image",component:ImagesComponent},
       {path:"text",component:TextsComponent},
+      {path:"ngContent",component:ContentComponent}
    ]},
   {path:"",redirectTo:"/routemain/home",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

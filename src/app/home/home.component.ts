@@ -9,10 +9,10 @@ import {LoggingService} from '../service/logging.service';
 })
 export class HomeComponent implements OnInit {
 
-  term:string="";
-  arrList:any=[];
+   term:string="";
+   arrList:any=[];
 
-  trees:any[]=[
+  public trees:any[]=[
     {name:"wang",age:"23",color:['red','yellow','yellow']},
     {name:"wang",age:"23",color:['red','blue','yellow']},
     {name:"wang",age:"23",color:['red','pink','yellow']},

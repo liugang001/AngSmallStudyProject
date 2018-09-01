@@ -8,8 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class TitleTextComponent implements OnInit {
 
   constructor() { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

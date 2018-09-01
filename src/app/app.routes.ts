@@ -17,11 +17,8 @@ const appRoutes:Routes=[
       {path:"home",component:HomeComponent},
       {path:"image",component:ImagesComponent},
       {path:"text",component:TextsComponent},
-<<<<<<< HEAD
-      {path:"ngContent",component:ContentComponent}
-=======
+      {path:"ngContent",component:ContentComponent},
       {path:"layui",component:LayuiComponent},
->>>>>>> origin/master
    ]},
   {path:"",redirectTo:"/routemain/home",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

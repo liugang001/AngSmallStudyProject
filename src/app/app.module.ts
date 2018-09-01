@@ -20,15 +20,11 @@ import { FilterPipe } from './pipe/filter.pipe';
 import { GetdatePipe } from './pipe/getdate.pipe';
 import { LoginComponent } from './login/login.component';
 import { RoutemainComponent } from './routemain/routemain.component';
-<<<<<<< HEAD
 import { ContentComponent } from './content/content.component';
 import { TitleTextComponent } from './content/title-text/title-text.component';
-
-
-=======
 import { LayuiComponent } from './layui/layui.component';
 import { ChildComponent } from './child/child.component';
->>>>>>> origin/master
+
 
 
 
@@ -45,13 +41,10 @@ import { ChildComponent } from './child/child.component';
     FilterPipe,
     GetdatePipe,
     RoutemainComponent,
-<<<<<<< HEAD
     ContentComponent,
     TitleTextComponent,
-=======
     LayuiComponent,
     ChildComponent,
->>>>>>> origin/master
   ],
   imports: [
     BrowserModule,

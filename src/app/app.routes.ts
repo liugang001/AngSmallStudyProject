@@ -1,4 +1,3 @@
-
 //创建路由配置文件
 import { ImagesComponent } from './images/images.component';
 import { TextsComponent } from './texts/texts.component';
@@ -17,11 +16,15 @@ const appRoutes:Routes=[
       {path:"home",component:HomeComponent},
       {path:"image",component:ImagesComponent},
       {path:"text",component:TextsComponent},
-      {path:"ngContent",component:ContentComponent},
+      {path:"ngContent/:id",component:ContentComponent},
       {path:"layui",component:LayuiComponent},
    ]},
   {path:"",redirectTo:"/routemain/home",pathMatch:"full"},
   {path:"**",component:ErrorComponent}
 ];
 
-export const Routing:ModuleWithProviders=RouterModule.forRoot(appRoutes);
+export const Routing:ModuleWithProviders=RouterModule.forRoot(
+  appRoutes,
+  { useHash: true}
+);
+

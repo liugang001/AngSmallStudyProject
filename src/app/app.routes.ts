@@ -16,7 +16,7 @@ const appRoutes:Routes=[
       {path:"home",component:HomeComponent},
       {path:"image",component:ImagesComponent},
       {path:"text",component:TextsComponent},
-      {path:"ngContent/:id",component:ContentComponent},
+      {path:"ngContent/:id/:ts",component:ContentComponent},
       {path:"layui",component:LayuiComponent},
    ]},
   {path:"",redirectTo:"/routemain/home",pathMatch:"full"},

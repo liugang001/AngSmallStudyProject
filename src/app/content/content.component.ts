@@ -18,7 +18,6 @@ export class ContentComponent implements OnInit {
 
   //事件函数---------
   public doEvent(){
-      alert(3456);
       this.route.navigate(['./routemain/ngContent',34,67])
   }
 
@@ -28,8 +27,9 @@ export class ContentComponent implements OnInit {
     this.acceptParam=this.router.snapshot.params['id'];
     this.acceptTs=this.router.snapshot.params['ts'];
     //参数订阅
-    this.router.data.subscribe(data=>{
-       console.log(data);
+    this.router.params.subscribe(data=>{
+      this.acceptParam=data['id'];
+      this.acceptTs=data['ts'];
     })
 
   }

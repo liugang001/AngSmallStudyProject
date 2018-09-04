@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-content',
@@ -7,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  title:string='APP TItLES';
-  name:string;
-  age:number;
-  arr:any;
-  constructor() { }
-  ngOnInit(){}
+  title:string='meng guang yuan hang....';
+  acceptParam:string;
+  acceptTs:string;
+  constructor(
+    private router:ActivatedRoute
+  ) {}
+  ngOnInit(){
+    //参数快照
+    this.acceptParam=this.router.snapshot.params['id'];
+    this.acceptTs=this.router.snapshot.params['ts'];
+    //参数订阅
+    this.router.data.subscribe(data=>{
+       console.log(data);
+    })
+
+  }
 }

@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-main></app-main>\n\n\n"
+module.exports = "<app-main></app-main>\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -100,17 +100,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var ng_lazyload_image__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-lazyload-image */ "./node_modules/ng-lazyload-image/index.js");
 /* harmony import */ var ng_lazyload_image__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(ng_lazyload_image__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
-/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
-/* harmony import */ var _images_images_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/images.component */ "./src/app/images/images.component.ts");
-/* harmony import */ var _texts_texts_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./texts/texts.component */ "./src/app/texts/texts.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _common_error_error_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./common/error/error.component */ "./src/app/common/error/error.component.ts");
-/* harmony import */ var _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pipe/filter.pipe */ "./src/app/pipe/filter.pipe.ts");
-/* harmony import */ var _pipe_getdate_pipe__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pipe/getdate.pipe */ "./src/app/pipe/getdate.pipe.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./routemain/routemain.component */ "./src/app/routemain/routemain.component.ts");
+/* harmony import */ var element_angular_release_element_angular_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! element-angular/release/element-angular.module */ "./node_modules/element-angular/release/element-angular.module.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
+/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
+/* harmony import */ var _images_images_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/images.component */ "./src/app/images/images.component.ts");
+/* harmony import */ var _texts_texts_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./texts/texts.component */ "./src/app/texts/texts.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _common_error_error_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./common/error/error.component */ "./src/app/common/error/error.component.ts");
+/* harmony import */ var _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pipe/filter.pipe */ "./src/app/pipe/filter.pipe.ts");
+/* harmony import */ var _pipe_getdate_pipe__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pipe/getdate.pipe */ "./src/app/pipe/getdate.pipe.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./routemain/routemain.component */ "./src/app/routemain/routemain.component.ts");
+/* harmony import */ var _content_content_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./content/content.component */ "./src/app/content/content.component.ts");
+/* harmony import */ var _content_title_text_title_text_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./content/title-text/title-text.component */ "./src/app/content/title-text/title-text.component.ts");
+/* harmony import */ var _layui_layui_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./layui/layui.component */ "./src/app/layui/layui.component.ts");
+/* harmony import */ var _child_child_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./child/child.component */ "./src/app/child/child.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -136,23 +141,32 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
-                _main_main_component__WEBPACK_IMPORTED_MODULE_9__["MainComponent"],
-                _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_10__["NavbarComponent"],
-                _images_images_component__WEBPACK_IMPORTED_MODULE_11__["ImagesComponent"],
-                _texts_texts_component__WEBPACK_IMPORTED_MODULE_12__["TextsComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_13__["HomeComponent"],
-                _login_login_component__WEBPACK_IMPORTED_MODULE_17__["LoginComponent"],
-                _common_error_error_component__WEBPACK_IMPORTED_MODULE_14__["ErrorComponent"],
-                _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_15__["FilterPipe"],
-                _pipe_getdate_pipe__WEBPACK_IMPORTED_MODULE_16__["GetdatePipe"],
-                _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_18__["RoutemainComponent"],
+                _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"],
+                _main_main_component__WEBPACK_IMPORTED_MODULE_10__["MainComponent"],
+                _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_11__["NavbarComponent"],
+                _images_images_component__WEBPACK_IMPORTED_MODULE_12__["ImagesComponent"],
+                _texts_texts_component__WEBPACK_IMPORTED_MODULE_13__["TextsComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_14__["HomeComponent"],
+                _login_login_component__WEBPACK_IMPORTED_MODULE_18__["LoginComponent"],
+                _common_error_error_component__WEBPACK_IMPORTED_MODULE_15__["ErrorComponent"],
+                _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_16__["FilterPipe"],
+                _pipe_getdate_pipe__WEBPACK_IMPORTED_MODULE_17__["GetdatePipe"],
+                _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_19__["RoutemainComponent"],
+                _content_content_component__WEBPACK_IMPORTED_MODULE_20__["ContentComponent"],
+                _content_title_text_title_text_component__WEBPACK_IMPORTED_MODULE_21__["TitleTextComponent"],
+                _layui_layui_component__WEBPACK_IMPORTED_MODULE_22__["LayuiComponent"],
+                _child_child_component__WEBPACK_IMPORTED_MODULE_23__["ChildComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -161,10 +175,11 @@ var AppModule = /** @class */ (function () {
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"],
+                element_angular_release_element_angular_module__WEBPACK_IMPORTED_MODULE_8__["ElModule"].forRoot(),
                 _app_routes__WEBPACK_IMPORTED_MODULE_5__["Routing"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -189,9 +204,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _common_error_error_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/error/error.component */ "./src/app/common/error/error.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./routemain/routemain.component */ "./src/app/routemain/routemain.component.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _layui_layui_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./layui/layui.component */ "./src/app/layui/layui.component.ts");
+/* harmony import */ var _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./routemain/routemain.component */ "./src/app/routemain/routemain.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _content_content_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./content/content.component */ "./src/app/content/content.component.ts");
 //创建路由配置文件
+
+
 
 
 
@@ -201,15 +220,96 @@ __webpack_require__.r(__webpack_exports__);
 
 var appRoutes = [
     { path: "login", component: _login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"] },
-    { path: "routemain", component: _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_5__["RoutemainComponent"], children: [
+    { path: "routemain", component: _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_6__["RoutemainComponent"], children: [
             { path: "home", component: _home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] },
             { path: "image", component: _images_images_component__WEBPACK_IMPORTED_MODULE_0__["ImagesComponent"] },
             { path: "text", component: _texts_texts_component__WEBPACK_IMPORTED_MODULE_1__["TextsComponent"] },
+            { path: "ngContent/:id", component: _content_content_component__WEBPACK_IMPORTED_MODULE_8__["ContentComponent"] },
+            { path: "layui", component: _layui_layui_component__WEBPACK_IMPORTED_MODULE_5__["LayuiComponent"] },
         ] },
     { path: "", redirectTo: "/routemain/home", pathMatch: "full" },
     { path: "**", component: _common_error_error_component__WEBPACK_IMPORTED_MODULE_3__["ErrorComponent"] }
 ];
-var Routing = _angular_router__WEBPACK_IMPORTED_MODULE_6__["RouterModule"].forRoot(appRoutes);
+var Routing = _angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"].forRoot(appRoutes, { useHash: true });
+
+
+/***/ }),
+
+/***/ "./src/app/child/child.component.css":
+/*!*******************************************!*\
+  !*** ./src/app/child/child.component.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/child/child.component.html":
+/*!********************************************!*\
+  !*** ./src/app/child/child.component.html ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>{{page}}</p>\r\n<p>{{modelValue}}</p>\r\n<p>{{newModel}}</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/child/child.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/child/child.component.ts ***!
+  \******************************************/
+/*! exports provided: ChildComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChildComponent", function() { return ChildComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ChildComponent = /** @class */ (function () {
+    function ChildComponent() {
+        this.addEvent = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.page = "2334";
+        this.name = "十全十美";
+    }
+    ChildComponent.prototype.ngOnInit = function () {
+        this.addEvent.emit(this.page);
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], ChildComponent.prototype, "modelValue", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], ChildComponent.prototype, "newModel", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"])
+    ], ChildComponent.prototype, "addEvent", void 0);
+    ChildComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-child',
+            template: __webpack_require__(/*! ./child.component.html */ "./src/app/child/child.component.html"),
+            styles: [__webpack_require__(/*! ./child.component.css */ "./src/app/child/child.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ChildComponent);
+    return ChildComponent;
+}());
+
 
 
 /***/ }),
@@ -232,7 +332,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <p>\n    未找到任何路由信息\n  </p>\n</div>\n"
+module.exports = "<div class=\"container\">\r\n  <p>\r\n    未找到任何路由信息\r\n  </p>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -271,6 +371,136 @@ var ErrorComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ErrorComponent);
     return ErrorComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/content/content.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/content/content.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".line{border:1px solid #e2e2e2;margin-top:10px;padding:15px;}\r\nheader.header{font-size:24px;color:blue;}\r\n.box p{margin-bottom:15px;font-size:15px;color:red;}\r\ndiv[name=footer]{height:30px;background:green;color:#fff;margin-top:30px;\r\nline-height:30px;}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/content/content.component.html":
+/*!************************************************!*\
+  !*** ./src/app/content/content.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <h3>ngContent示例</h3>\n  <div class=\"line\">\n      <app-title-text>\n          <header class=\"header\">{{title}}</header>\n          <div class=\"box\">\n              <p>start....</p>\n              <p>start....</p>\n              <p>start....</p>\n          </div>\n          <div name=\"footer\">\n              FOOTER\n          </div>\n      </app-title-text>\n  </div>\n  <p>接受到的参数是:{{acceptParam}}</p>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/content/content.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/content/content.component.ts ***!
+  \**********************************************/
+/*! exports provided: ContentComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentComponent", function() { return ContentComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ContentComponent = /** @class */ (function () {
+    function ContentComponent(router) {
+        this.router = router;
+        this.title = 'APP TItLES';
+    }
+    ContentComponent.prototype.ngOnInit = function () {
+        this.acceptParam = this.router.snapshot.params['id'];
+    };
+    ContentComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-content',
+            template: __webpack_require__(/*! ./content.component.html */ "./src/app/content/content.component.html"),
+            styles: [__webpack_require__(/*! ./content.component.css */ "./src/app/content/content.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]])
+    ], ContentComponent);
+    return ContentComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/content/title-text/title-text.component.css":
+/*!*************************************************************!*\
+  !*** ./src/app/content/title-text/title-text.component.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/content/title-text/title-text.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/content/title-text/title-text.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"myBox\">\n  <ng-content select=\"header\"></ng-content>\n  <ng-content select=\".box\"></ng-content>\n  <ng-content select=\"[name=footer]\"></ng-content>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/content/title-text/title-text.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/content/title-text/title-text.component.ts ***!
+  \************************************************************/
+/*! exports provided: TitleTextComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TitleTextComponent", function() { return TitleTextComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TitleTextComponent = /** @class */ (function () {
+    function TitleTextComponent() {
+    }
+    TitleTextComponent.prototype.ngOnInit = function () { };
+    TitleTextComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-title-text',
+            template: __webpack_require__(/*! ./title-text.component.html */ "./src/app/content/title-text/title-text.component.html"),
+            styles: [__webpack_require__(/*! ./title-text.component.css */ "./src/app/content/title-text/title-text.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], TitleTextComponent);
+    return TitleTextComponent;
 }());
 
 
@@ -377,7 +607,7 @@ module.exports = "p.imgName{margin-bottom:0;font-size:16px;padding:5px 0 0;}\r\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\n      <div class=\"thumbnail\">\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\n        <p class=\"text-danger imgName\">这是第001张图片</p>\n      </div>\n    </div>\n\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3 col-sm-12 col-xs-12\">\r\n      <div class=\"thumbnail\">\r\n        <img src=\"assets/img/1.jpg\" [defaultImage]=\"defaultImage\" [lazyLoad]=\"cover\" [offset] = \"offset\">\r\n        <p class=\"text-danger imgName\">这是第001张图片</p>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -420,6 +650,75 @@ var ImagesComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/layui/layui.component.css":
+/*!*******************************************!*\
+  !*** ./src/app/layui/layui.component.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".bg-purple-dark{\r\n  height:40px;\r\n  background: #99A9BF;\r\n}\r\n.bg-purple{height:40px;background:purple;}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/layui/layui.component.html":
+/*!********************************************!*\
+  !*** ./src/app/layui/layui.component.html ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n  <div el-row>\r\n    <div el-col span=\"24\">\r\n      <div class=\"grid-content bg-purple-dark\"></div>\r\n    </div>\r\n  </div>\r\n  <div style=\"margin-top:15px;\">\r\n    <div el-row gutter=\"14\">\r\n      <div el-col [span]=\"6\" [xs]=\"{span:24}\">\r\n        <div class=\"grid-content bg-purple\"></div>\r\n      </div>\r\n      <div el-col [span]=\"6\" [xs]=\"{span:24}\">\r\n        <div class=\"grid-content bg-purple\"></div>\r\n      </div>\r\n      <div el-col [span]=\"6\" [xs]=\"{span:24}\">\r\n        <div class=\"grid-content bg-purple\"></div>\r\n      </div>\r\n      <div el-col [span]=\"6\" [xs]=\"{span:24}\">\r\n        <div class=\"grid-content bg-purple\"></div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div style=\"margin-top:15px;\">\r\n    <div el-row gutter=\"14\" type=\"flex\" justify=\"space-between\">\r\n      <div el-col [span]=\"4\">\r\n        <div class=\"grid-content bg-purple\"></div>\r\n      </div>\r\n      <div el-col [span]=\"4\">\r\n        <div class=\"grid-content bg-purple\"></div>\r\n      </div>\r\n      <div el-col [span]=\"4\">\r\n        <div class=\"grid-content bg-purple\"></div>\r\n      </div>\r\n      <div el-col [span]=\"4\">\r\n        <div class=\"grid-content bg-purple\"></div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/layui/layui.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/layui/layui.component.ts ***!
+  \******************************************/
+/*! exports provided: LayuiComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LayuiComponent", function() { return LayuiComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var ztree__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ztree */ "./node_modules/ztree/js/jquery.ztree.all.js");
+/* harmony import */ var ztree__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(ztree__WEBPACK_IMPORTED_MODULE_2__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var LayuiComponent = /** @class */ (function () {
+    function LayuiComponent() {
+    }
+    LayuiComponent.prototype.ngOnInit = function () {
+    };
+    LayuiComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-layui',
+            template: __webpack_require__(/*! ./layui.component.html */ "./src/app/layui/layui.component.html"),
+            styles: [__webpack_require__(/*! ./layui.component.css */ "./src/app/layui/layui.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], LayuiComponent);
+    return LayuiComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/login/login.component.css":
 /*!*******************************************!*\
   !*** ./src/app/login/login.component.css ***!
@@ -438,7 +737,7 @@ module.exports = ".box{width:100%;height:100%;background:rgba(0,0,0,.5);position
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"box\">\n  running\n</div>\n"
+module.exports = "<div class=\"box\">\r\n  running\r\n</div>\r\n"
 
 /***/ }),
 
@@ -501,7 +800,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\n"
+module.exports = "<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
@@ -564,7 +863,7 @@ module.exports = ".navbar{margin-bottom:10px;}\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\"\n              aria-expanded=\"false\" aria-controls=\"navbar\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">AngularSalllProject</a>\n    </div>\n    <div id=\"navbar\" class=\"collapse navbar-collapse\">\n      <ul class=\"nav navbar-nav navbar-left\">\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['home']\">Home</a></li>\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['image']\">Images</a></li>\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['text']\">Texts</a></li>\n      </ul>\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li><a href=\"javascript:;\">登录</a></li>\n        <li><a href=\"javascript:;\">注册</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-inverse\">\r\n  <div class=\"container\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\"\r\n              aria-expanded=\"false\" aria-controls=\"navbar\">\r\n        <span class=\"sr-only\">Toggle navigation</span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n      </button>\r\n      <a class=\"navbar-brand\" href=\"#\">AngularSalllProject</a>\r\n    </div>\r\n    <div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n      <ul class=\"nav navbar-nav navbar-left\">\r\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['./home']\">Home</a></li>\r\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['./image']\">Images</a></li>\r\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['./text']\">Texts</a></li>\r\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['./ngContent',23]\">ngContent</a></li>\r\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['./layui']\">layui</a></li>\r\n      </ul>\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li><a href=\"javascript:;\">登录</a></li>\r\n        <li><a href=\"javascript:;\">注册</a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -704,7 +1003,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n"
+module.exports = "<app-navbar></app-navbar>\r\n<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
@@ -813,7 +1112,7 @@ module.exports = "p{color:red;font-size:20px;}\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n   <p [ngStyle]=\"{color:color}\">{{title | uppercase}}</p>\n   <p>{{title | lowercase}}</p>\n   <p>{{title | slice:1:5}}</p>\n   <p>{{dateDay | getdate:'我来呢!'}}</p>\n</div>\n"
+module.exports = "<div class=\"container\">\r\n   <p [ngStyle]=\"{color:color}\">{{title | uppercase}}</p>\r\n   <p>{{title | lowercase}}</p>\r\n   <p>{{title | slice:1:5}}</p>\r\n   <p>{{dateDay | getdate:'我来呢!'}}</p>\r\n   <app-child [modelValue]=\"title\" [newModel]=\"order.name\" #order (addEvent)=\"sendEvent($event)\"></app-child>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -828,6 +1127,7 @@ module.exports = "<div class=\"container\">\n   <p [ngStyle]=\"{color:color}\">{
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextsComponent", function() { return TextsComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _child_child_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../child/child.component */ "./src/app/child/child.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -838,14 +1138,20 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var TextsComponent = /** @class */ (function () {
     function TextsComponent() {
         this.title = "this is A Book";
         this.color = "green";
-        this.dateDay = "";
     }
-    TextsComponent.prototype.ngOnInit = function () {
+    TextsComponent.prototype.sendEvent = function (event) {
+        console.log(event);
     };
+    TextsComponent.prototype.ngOnInit = function () { };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])(_child_child_component__WEBPACK_IMPORTED_MODULE_1__["ChildComponent"]),
+        __metadata("design:type", _child_child_component__WEBPACK_IMPORTED_MODULE_1__["ChildComponent"])
+    ], TextsComponent.prototype, "order", void 0);
     TextsComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-texts',
@@ -921,7 +1227,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\gangwebs\AngSmallStudyProject\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! G:\gangWeb\AngSmallStudyProject\src\main.ts */"./src/main.ts");
 
 
 /***/ })

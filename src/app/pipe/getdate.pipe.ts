@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class GetdatePipe implements PipeTransform {
 
   public transform(number:string,text:string): any {
-      return text+345;
+      return text+3455;
   }
 
 }

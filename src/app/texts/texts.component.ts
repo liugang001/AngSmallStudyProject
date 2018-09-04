@@ -10,9 +10,9 @@ export class TextsComponent implements OnInit {
 
   @ViewChild(ChildComponent) order:ChildComponent;
 
-  title="this is A Book";
-  color="green";
-  public dateDay:string;
+  title:string="this is A Book";
+  color:string="green";
+  dateDay:string;
   sendEvent(event){
     console.log(event);
   }

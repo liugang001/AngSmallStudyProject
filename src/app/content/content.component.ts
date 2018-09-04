@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ContentComponent implements OnInit {
 
   title:string='APP TItLES';
+  name:string;
+  age:number;
+  arr:any;
   constructor() { }
   ngOnInit(){}
 }

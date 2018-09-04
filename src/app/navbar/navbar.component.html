@@ -15,8 +15,8 @@
         <li routerLinkActive="active"><a [routerLink]="['./home']">Home</a></li>
         <li routerLinkActive="active"><a [routerLink]="['./image']">Images</a></li>
         <li routerLinkActive="active"><a [routerLink]="['./text']">Texts</a></li>
-        <li routerLinkActive="active"><a [routerLink]="['./ngContent',23,67]">ngContent</a></li>
-        <li routerLinkActive="active"><a [routerLink]="['./layui']">layui</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['./ngContent',numStart,numEnd]">ngContent</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['./layui']" [queryParams]="{id:34,ts:23}">layui</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="javascript:;">登录</a></li>

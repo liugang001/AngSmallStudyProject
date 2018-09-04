@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-content',
@@ -12,8 +12,17 @@ export class ContentComponent implements OnInit {
   acceptParam:string;
   acceptTs:string;
   constructor(
-    private router:ActivatedRoute
+    private router:ActivatedRoute,
+    private route:Router
   ) {}
+
+  //事件函数---------
+  public doEvent(){
+      alert(3456);
+      this.route.navigate(['./routemain/ngContent',34,67])
+  }
+
+
   ngOnInit(){
     //参数快照
     this.acceptParam=this.router.snapshot.params['id'];

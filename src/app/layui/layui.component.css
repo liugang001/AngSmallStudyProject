@@ -3,3 +3,6 @@
   background: #99A9BF;
 }
 .bg-purple{height:40px;background:purple;}
+.top{margin-top:15px;}
+.modelText{font-size:16px;padding:10px;border:1px solid #e2e2e2;}
+.modelText p.text{margin-top:10px;color:red;}

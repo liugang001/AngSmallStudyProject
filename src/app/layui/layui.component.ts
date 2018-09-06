@@ -16,7 +16,14 @@ export class LayuiComponent implements OnInit {
   title:string='layui mode';
   idParam:string;
   tsParam:string;
+  textsInfo:string="gang";
   constructor(private routerInfo:ActivatedRoute,private route:Router) {}
+
+  //双向数据绑定
+  getTextFromModel(text:string){
+    console.log(text);
+  }
+
 
   //点击事件函数
   public dottedAdd(){

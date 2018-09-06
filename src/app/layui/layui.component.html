@@ -40,5 +40,11 @@
       </div>
     </div>
   </div>
+  <div class="top modelText">
+    <p>数据的双向绑定:</p>
+    <input type="text" [(ngModel)]="textsInfo" (input)="getTextFromModel(input.value)"  #input>
+    <p class="text">{{textsInfo}}</p>
+  </div>
+
 </div>
 

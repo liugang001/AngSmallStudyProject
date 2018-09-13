@@ -5,4 +5,23 @@
    <p>{{dateDay | getdate:'我来呢!'}}</p>
    <app-child [modelValue]="title" [newModel]="order.name" #order (addEvent)="sendEvent($event)"></app-child>
 </div>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">过滤器[filter]</div>
+    <div class="panel-body">
+          <p class="alert alert-danger">
+            <span>数字过滤前:{{myNumber}}</span>
+          </p>
+          <p class="alert alert-success">
+            <span>数字过滤后:{{myNumber | number:"2.1-4"}}</span>
+          </p>
+          <p class="alert alert-info">
+            <span>{{data | json}}</span>
+          </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+</div>
 

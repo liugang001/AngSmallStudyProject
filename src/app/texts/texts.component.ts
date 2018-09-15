@@ -13,6 +13,9 @@ export class TextsComponent implements OnInit {
   title:string="this is A Book";
   color:string="green";
   dateDay:string;
+  Fescolor:any={
+    color:"blue"
+  }
   sendEvent(event){
     console.log(event);
   }

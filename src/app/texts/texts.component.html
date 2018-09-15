@@ -1,8 +1,9 @@
 <div class="container">
    <p [ngStyle]="{color:color}">{{title | uppercase}}</p>
-   <p>{{title | lowercase}}</p>
-   <p>{{title | slice:1:5}}</p>
-   <p>{{dateDay | getdate:'我来呢!'}}</p>
+   <p class="alert alert-warning">{{title | lowercase}}</p>
+   <p class="alert alert-success">{{title | slice:1:5}}</p>
+   <p class="alert alert-info">{{dateDay | getdate:'我来呢!'}}</p>
+   <p class="alert alert-danger" [ngStyle]="{'color':Fescolor.color}">中秋节</p>
    <app-child [modelValue]="title" [newModel]="order.name" #order (addEvent)="sendEvent($event)"></app-child>
 </div>
 <div class="container">

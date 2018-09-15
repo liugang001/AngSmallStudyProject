@@ -13,12 +13,9 @@ export class TextsComponent implements OnInit {
   title:string="this is A Book";
   color:string="green";
   dateDay:string;
-  myNumber:number=23.3499494;
-  data:any={
-      name:"gang",
-      age:23,
-      address:"四川省遂宁市射洪县"
-  };
+  Fescolor:any={
+    color:"blue"
+  }
   sendEvent(event){
     console.log(event);
   }

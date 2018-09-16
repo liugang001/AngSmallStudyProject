@@ -10,7 +10,6 @@ import {ElModule} from 'element-angular/release/element-angular.module';
 
 
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ImagesComponent } from './images/images.component';
 import { TextsComponent } from './texts/texts.component';
@@ -24,14 +23,13 @@ import { ContentComponent } from './content/content.component';
 import { TitleTextComponent } from './content/title-text/title-text.component';
 import { LayuiComponent } from './layui/layui.component';
 import { ChildComponent } from './child/child.component';
-
+import { DireComponent } from './pageDire/dire/dire.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
     NavbarComponent,
     ImagesComponent,
     TextsComponent,
@@ -45,7 +43,8 @@ import { ChildComponent } from './child/child.component';
     TitleTextComponent,
     LayuiComponent,
     ChildComponent,
-  ],
+    DireComponent,
+   ],
   imports: [
     BrowserModule,
     CommonModule,

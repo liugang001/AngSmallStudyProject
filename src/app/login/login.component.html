@@ -1,3 +1,7 @@
 <div class="box">
-  running
+    <div id="content" class="pCenter">
+      <ul>
+          <li *ngFor="let item of listArr" [routerLink]="[item.link]">{{item.name}}</li>
+      </ul>
+    </div>
 </div>

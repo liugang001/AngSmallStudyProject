@@ -10,6 +10,9 @@ import {RouterModule, Routes} from '@angular/router';
 import {ModuleWithProviders} from '@angular/core';
 import {ContentComponent} from './content/content.component';
 
+//演示区3
+import {DireComponent} from './pageDire/dire/dire.component';
+
 const appRoutes:Routes=[
   {path:"login",component:LoginComponent},
   {path:"routemain",component:RoutemainComponent,children:[
@@ -18,8 +21,9 @@ const appRoutes:Routes=[
       {path:"text",component:TextsComponent},
       {path:"ngContent/:id/:ts",component:ContentComponent},
       {path:"layui",component:LayuiComponent},
+      {path:"dire",component:DireComponent}
    ]},
-  {path:"",redirectTo:"/routemain/home",pathMatch:"full"},
+  {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}
 ];
 

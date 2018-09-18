@@ -5,7 +5,11 @@
       "arrList":[
         {
           "name":"属性指令",
-          "link":""
+          "link":"./home"
+        },
+        {
+          "name":"结构指令",
+          "link":"./image"
         }
       ]
     }

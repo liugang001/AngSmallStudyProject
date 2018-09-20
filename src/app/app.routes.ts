@@ -11,7 +11,8 @@ import {ModuleWithProviders} from '@angular/core';
 import {ContentComponent} from './content/content.component';
 
 //演示区3
-import {DireComponent} from './pageDire/dire/dire.component';
+import {DireComponent} from './pageDire/direProperty/dire.component';
+
 
 const appRoutes:Routes=[
   {path:"login",component:LoginComponent},
@@ -21,7 +22,7 @@ const appRoutes:Routes=[
       {path:"text",component:TextsComponent},
       {path:"ngContent/:id/:ts",component:ContentComponent},
       {path:"layui",component:LayuiComponent},
-      {path:"dire",component:DireComponent}
+      {path:"direProperty",component:DireComponent}
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

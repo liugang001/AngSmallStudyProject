@@ -1,0 +1,7 @@
+.addRed{color:red;}
+.addSize{font-size:24px;}
+.addBlue{color:blue;}
+p.active{color:green;font-size:24px;}
+p.element{font-weight:300;text-shadow:0 0 6px rgba(255,255,0,.4);}
+p.classColor{color:deeppink;}
+p.newColor{color:purple;font-size:26px;text-decoration: underline;text-decoration-color:deeppink;}

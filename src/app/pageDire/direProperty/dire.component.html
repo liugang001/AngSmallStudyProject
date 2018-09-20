@@ -1,0 +1,52 @@
+<div class="container">
+  <!--NGCLASS 内部样式或者外部样式-->
+  <div class="panel panel-primary">
+     <div class="panel-heading">
+        <h3 class="panel-title">ngClass[内部样式OR外部样式]</h3>
+     </div>
+     <div class="panel-body">
+         <p  [ngClass]="'addRed addSize'">PRINT A ClASS ONE</p>
+         <p  [ngClass]="['addBlue','addSize']">PRINT A ClASS TWO</p>
+         <p  [ngClass]="{'active':classFlag,'element':classBool}">PRINT A ClASS THREE</p>
+         <p  [ngClass]="{'active':classType=='gang'}">PRINT A ClASS THREE</p>
+         <p  [ngClass]="setMyClass()">PRINT A ClASS THREE</p>
+         <p  [class.newColor]="{'newColor':true}">PRINT A ClASS THREE</p>
+     </div>
+  </div>
+
+  <!--NGSTYLE 内联样式-->
+  <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h3 class="panel-title">ngClass[内联样式]</h3>
+    </div>
+    <div class="panel-body">
+        <p [style.fontSize]="'24px'">开始JavaScript Angular Assignment!</p>
+        <p [style.color]="'deeppink'" [style.fontSize]="'24px'">开始JavaScript Angular Assignment!</p>
+        <p [ngStyle]="setMyStyle()">开始JavaScript Angular Assignment!</p>
+    </div>
+  </div>
+
+
+  <!--NGMDEOL 数据绑定-->
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">ngModel</h3>
+    </div>
+    <div class="panel-body">
+        <!--单向数据绑定-->
+        <div class="form-group">
+          <input type="text" class="form-control" value="{{textSingleInput}}">
+        </div>
+        <div class="form-group">
+          <p class="text-primary">{{textSingleInput}}</p>
+        </div>
+      <!--双向数据绑定-->
+       <div class="form-group">
+           <input type="text" class="form-control" [(ngModel)]="textPairInput">
+       </div>
+       <div class="form-group">
+          <p class="text-danger text">{{textPairInput}}</p>
+       </div>
+    </div>
+  </div>
+</div>

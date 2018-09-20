@@ -23,7 +23,7 @@ import { ContentComponent } from './content/content.component';
 import { TitleTextComponent } from './content/title-text/title-text.component';
 import { LayuiComponent } from './layui/layui.component';
 import { ChildComponent } from './child/child.component';
-import { DireComponent } from './pageDire/dire/dire.component';
+import { DireComponent } from './pageDire/direProperty/dire.component';
 
 
 

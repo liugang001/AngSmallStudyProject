@@ -1,0 +1,19 @@
+
+<!--结构型指令-->
+<div class="container">
+  <!--NGIF-->
+  <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h3 class="panel-title">简单NGIF</h3>
+    </div>
+    <div class="panel-body">
+        <!--else 绑定指向的是一个带有 #elseBlock 标签的 <ng-template> 元素-->
+        <p *ngIf="showText;else elseBlock">西牛矩阵科技有限公司</p>
+        <ng-template #elseBlock>
+            <p>西谷物联科技有限公司</p>
+        </ng-template>
+    </div>
+  </div>
+  
+
+</div>

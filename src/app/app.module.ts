@@ -24,6 +24,7 @@ import { TitleTextComponent } from './content/title-text/title-text.component';
 import { LayuiComponent } from './layui/layui.component';
 import { ChildComponent } from './child/child.component';
 import { DireComponent } from './pageDire/direProperty/dire.component';
+import { DireMixComponent } from './pageDire/direMix/dire-mix.component';
 
 
 
@@ -44,6 +45,7 @@ import { DireComponent } from './pageDire/direProperty/dire.component';
     LayuiComponent,
     ChildComponent,
     DireComponent,
+    DireMixComponent,
    ],
   imports: [
     BrowserModule,

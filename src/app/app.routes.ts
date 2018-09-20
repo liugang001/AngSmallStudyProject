@@ -12,6 +12,7 @@ import {ContentComponent} from './content/content.component';
 
 //演示区3
 import {DireComponent} from './pageDire/direProperty/dire.component';
+import {DireMixComponent} from './pageDire/direMix/dire-mix.component';
 
 
 const appRoutes:Routes=[
@@ -22,7 +23,8 @@ const appRoutes:Routes=[
       {path:"text",component:TextsComponent},
       {path:"ngContent/:id/:ts",component:ContentComponent},
       {path:"layui",component:LayuiComponent},
-      {path:"direProperty",component:DireComponent}
+      {path:"direProperty",component:DireComponent},//属性型指令
+      {path:"direMix",component:DireMixComponent}//结构型指令
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

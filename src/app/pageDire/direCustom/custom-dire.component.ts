@@ -8,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class CustomDireComponent implements OnInit {
 
 
+  public booleanValue:boolean=false;
   constructor() {}
 
 

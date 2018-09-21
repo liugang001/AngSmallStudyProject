@@ -1,4 +1,4 @@
-import { Directive,ElementRef,Input,HostListener} from '@angular/core';
+import { Directive,ElementRef,Input,HostListener,HostBinding,Renderer2} from '@angular/core';
 
 @Directive({
   selector: '[ColorEvent]'
@@ -36,7 +36,7 @@ export class ColorEventDirective {
 
   //动态传值
   @Input('ColorEvent') colorFont:string;
-  constructor(private el:ElementRef) {
+  constructor(private el:ElementRef,private render2:Renderer2) {
       this.element=el.nativeElement;//当前DOM元素
       this.setColor(this.colorName);//设置颜色
   }
@@ -48,6 +48,12 @@ export class ColorEventDirective {
       this.flag=!this.flag;
       this.setColor(this.flag?"deeppink":"green");
   }
+
+  //推荐该方式，避免与DOM直接打交道
+  @HostListener("mouseover") onMouseover(){
+      this.render2.setStyle(this.element,"background",'cyan');
+  }
+
 
 
 

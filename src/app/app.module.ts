@@ -9,6 +9,14 @@ import {LazyLoadImageModule} from "ng-lazyload-image";
 import {ElModule} from 'element-angular/release/element-angular.module';
 
 
+//指令模块
+import {MyColorDirective} from './pageDire/myDire/my-color.directive';
+import {ColorEventDirective } from './pageDire/myDire/color-event.directive';
+
+
+
+
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ImagesComponent } from './images/images.component';
@@ -25,7 +33,7 @@ import { LayuiComponent } from './layui/layui.component';
 import { ChildComponent } from './child/child.component';
 import { DireComponent } from './pageDire/direProperty/dire.component';
 import { DireMixComponent } from './pageDire/direMix/dire-mix.component';
-
+import { CustomDireComponent } from './pageDire/direCustom/custom-dire.component';
 
 
 @NgModule({
@@ -46,6 +54,9 @@ import { DireMixComponent } from './pageDire/direMix/dire-mix.component';
     ChildComponent,
     DireComponent,
     DireMixComponent,
+    CustomDireComponent,
+    MyColorDirective,
+    ColorEventDirective
    ],
   imports: [
     BrowserModule,

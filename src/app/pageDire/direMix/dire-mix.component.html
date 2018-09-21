@@ -4,16 +4,63 @@
   <!--NGIF-->
   <div class="panel panel-danger">
     <div class="panel-heading">
-      <h3 class="panel-title">简单NGIF</h3>
+      <h3 class="panel-title">NGIF</h3>
     </div>
     <div class="panel-body">
+        <!--NGIF如果判断值为false，则直接移除该DOM元素-->
         <!--else 绑定指向的是一个带有 #elseBlock 标签的 <ng-template> 元素-->
-        <p *ngIf="showText;else elseBlock">西牛矩阵科技有限公司</p>
+        <p class="title" *ngIf="showText;else elseBlock">西牛矩阵科技有限公司</p>
         <ng-template #elseBlock>
             <p>西谷物联科技有限公司</p>
         </ng-template>
     </div>
   </div>
-  
 
+  <!--ngFor-->
+  <div class="panel panel-primary">
+        <div class="panel panel-heading">
+            <h3 class="panel-title">ngFor</h3>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover text-center">
+                    <thead>
+                      <tr>
+                        <th  class="text-center">编号</th>
+                        <th  class="text-center">姓名</th>
+                        <th class="text-center">年龄</th>
+                        <th class="text-center">地区</th>
+                        <th class="text-center">爱好</th>
+                        <th class="text-center">操作</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of jsonArrList;trackBy:trackById;let i=index;">
+                          <td>{{i+1}}</td>
+                          <td>{{item.name}}</td>
+                          <td>{{item.age}}</td>
+                          <td>{{item.address}}</td>
+                          <td>
+                              <span *ngFor="let ele of item.love" class="text-danger" class="mar-right">{{ele}}</span>
+                          </td>
+                          <td><button class="btn btn-sm btn-danger" (click)="cancelEvent(item.id)">删除</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+  </div>
+
+  <!--ngSwitch-->
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">NGSwitch</h3>
+    </div>
+    <div class="panel-body" [ngSwitch]="colorName">
+        <p class="text-danger" *ngSwitchCase="'red'">这句话的字体颜色是红色的</p>
+        <p class="text-primary" *ngSwitchCase="'blue'">这句话的字体颜色是蓝色的</p>
+        <p class="text-success" *ngSwitchCase="'green'">这句话的字体颜色是绿色的</p>
+        <p *ngSwitchDefault>这句话的字体颜色是其它类型</p>
+    </div>
+  </div>
 </div>

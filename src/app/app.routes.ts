@@ -10,9 +10,10 @@ import {RouterModule, Routes} from '@angular/router';
 import {ModuleWithProviders} from '@angular/core';
 import {ContentComponent} from './content/content.component';
 
-//演示区3
+//指令
 import {DireComponent} from './pageDire/direProperty/dire.component';
 import {DireMixComponent} from './pageDire/direMix/dire-mix.component';
+import {CustomDireComponent} from './pageDire/direCustom/custom-dire.component';
 
 
 const appRoutes:Routes=[
@@ -24,7 +25,8 @@ const appRoutes:Routes=[
       {path:"ngContent/:id/:ts",component:ContentComponent},
       {path:"layui",component:LayuiComponent},
       {path:"direProperty",component:DireComponent},//属性型指令
-      {path:"direMix",component:DireMixComponent}//结构型指令
+      {path:"direMix",component:DireMixComponent},//结构型指令
+      {path:"direCus",component:CustomDireComponent}
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

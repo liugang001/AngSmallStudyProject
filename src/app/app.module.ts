@@ -12,7 +12,12 @@ import {ElModule} from 'element-angular/release/element-angular.module';
 //指令模块
 import {MyColorDirective} from './pageDire/myDire/my-color.directive';
 import {ColorEventDirective} from './pageDire/myDire/color-event.directive';
-import {StructDirective} from './pageDire/myDire/struct.directive';
+
+//依赖注入
+import { CarComponent } from './pageDepence/car/car.component';
+import { FruitserveComponent } from './pageDepence/fruitserve/fruitserve.component'
+
+
 
 
 import { AppComponent } from './app.component';
@@ -31,7 +36,9 @@ import { LayuiComponent } from './layui/layui.component';
 import { ChildComponent } from './child/child.component';
 import { DireComponent } from './pageDire/direProperty/dire.component';
 import { DireMixComponent } from './pageDire/direMix/dire-mix.component';
-import { CustomDireComponent } from './pageDire/direCustom/custom-dire.component';
+import {CustomDireComponent} from './pageDire/direCustom/custom-dire.component';
+
+
 
 
 
@@ -57,7 +64,8 @@ import { CustomDireComponent } from './pageDire/direCustom/custom-dire.component
     CustomDireComponent,
     MyColorDirective,
     ColorEventDirective,
-    StructDirective,
+    CarComponent,
+    FruitserveComponent
    ],
   imports: [
     BrowserModule,

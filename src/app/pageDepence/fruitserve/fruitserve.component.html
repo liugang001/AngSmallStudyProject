@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">服务通信</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <li *ngFor="let item of FruitList" class="list-group-item">
+              {{item.name}} <span class="badge" [ngStyle]="{'background':item.color}">{{item.color}}</span>
+            </li>
+        </ul>
+         <p class="text-danger">{{textPara}}</p>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 <div class="box">
     <div id="content" class="pCenter">
       <ul>
-          <li *ngFor="let item of listArr" [routerLink]="[item.link]">{{item.name}}</li>
+          <li *ngFor="let item of listArr;index as i" (click)="goRoute(item.link,i)">{{item.name}}</li>
       </ul>
     </div>
 </div>

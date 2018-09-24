@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+
 
 @Component({
   selector: 'app-navbar',
@@ -8,26 +9,29 @@ import {HttpClient} from '@angular/common/http';
 })
 export class NavbarComponent implements OnInit {
 
+  @Input() hashParams:any;
   //定义存放路由列表的数据
-  public routeList:any=[];
+  private routeList:any=[];
 
   //初始化加载 显示路由列表信息
-  LoadRouteList(){
+  LoadRouteList(index:number){
     this.Http.get("../../assets/fake/route.json").subscribe(res=>{
-      this.routeList=res['result'][0].arrList;
+      this.routeList=res['result'][index].arrList;
     })
   }
 
 
   constructor(
-    private Http:HttpClient
+    private Http:HttpClient,
   ) {}
 
 
 
   ngOnInit() {
-     this.LoadRouteList();
+    let hashIndex=Number.parseInt(this.hashParams);
+    if(!hashIndex){
+      hashIndex=parseInt(localStorage.getItem('myHash'));
+    }
+    this.LoadRouteList(hashIndex);
   }
-
-
 }

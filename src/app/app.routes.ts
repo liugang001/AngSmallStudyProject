@@ -15,6 +15,9 @@ import {DireComponent} from './pageDire/direProperty/dire.component';
 import {DireMixComponent} from './pageDire/direMix/dire-mix.component';
 import {CustomDireComponent} from './pageDire/direCustom/custom-dire.component';
 
+//依赖注入
+import {CarComponent} from './pageDepence/car/car.component';
+import {FruitserveComponent} from './pageDepence/fruitserve/fruitserve.component';
 
 const appRoutes:Routes=[
   {path:"login",component:LoginComponent},
@@ -26,7 +29,9 @@ const appRoutes:Routes=[
       {path:"layui",component:LayuiComponent},
       {path:"direProperty",component:DireComponent},//属性型指令
       {path:"direMix",component:DireMixComponent},//结构型指令
-      {path:"direCus",component:CustomDireComponent}
+      {path:"direCus",component:CustomDireComponent},//自定义指令
+      {path:"carInject",component:CarComponent},//汽车实例
+      {path:"fruitServe",component:FruitserveComponent}//水果服务
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

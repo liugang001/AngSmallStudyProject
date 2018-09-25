@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-routemain',
@@ -7,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoutemainComponent implements OnInit {
 
+  public hashIndex:any;
 
-  constructor() {}
+  constructor(private routerInfo:ActivatedRoute) {}
+
+
 
   ngOnInit() {
-
+    this.hashIndex=this.routerInfo.snapshot.queryParams['id'];
   }
 
 }

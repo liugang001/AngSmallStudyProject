@@ -13,6 +13,8 @@ import {ElModule} from 'element-angular/release/element-angular.module';
 import {MyColorDirective} from './pageDire/myDire/my-color.directive';
 import {ColorEventDirective} from './pageDire/myDire/color-event.directive';
 import {StructDirective} from './pageDire/myDire/struct.directive';
+import {BorderDirective} from './pageDire/myDire/border.directive';
+
 
 //依赖注入
 import { CarComponent } from './pageDepence/car/car.component';
@@ -44,6 +46,7 @@ import {CustomDireComponent} from './pageDire/direCustom/custom-dire.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,6 +69,7 @@ import {CustomDireComponent} from './pageDire/direCustom/custom-dire.component';
     MyColorDirective,
     ColorEventDirective,
     StructDirective,
+    BorderDirective,
     CarComponent,
     FruitserveComponent
    ],

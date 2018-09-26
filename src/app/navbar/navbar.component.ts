@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
 
   //初始化加载 显示路由列表信息
   LoadRouteList(index:number){
-    this.Http.get("../../assets/fake/route.json").subscribe(res=>{
+    this.Http.get("assets/fake/route.json").subscribe(res=>{
       this.routeList=res['result'][index].arrList;
     })
   }

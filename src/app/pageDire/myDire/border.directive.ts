@@ -25,12 +25,11 @@ export class BorderDirective {
   constructor() {}
   //键盘事件绑定
   @HostListener("keydown") keydown(){
-      let colorIndex=parseInt(Math.random()*this.colorList.length);
+      const colorIndex=Number.parseInt((Math.random()*this.colorList.length).toString());
       let colorName=this.colorList[colorIndex];
-      console.log(colorName);
       this.colorType.colorName=colorName;
       this.color=this.borderColor=colorName;
-
+      console.log(colorName);
   }
 
 }

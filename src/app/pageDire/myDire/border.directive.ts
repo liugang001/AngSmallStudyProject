@@ -25,7 +25,7 @@ export class BorderDirective {
   constructor() {}
   //键盘事件绑定
   @HostListener("keydown") keydown(){
-      let colorIndex=parseInt(Math.random()*this.colorList.length);
+      let colorIndex=parseInt((Math.random()*this.colorList.length).toString());
       let colorName=this.colorList[colorIndex];
       console.log(colorName);
       this.colorType.colorName=colorName;

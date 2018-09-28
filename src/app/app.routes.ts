@@ -19,6 +19,10 @@ import {CustomDireComponent} from './pageDire/direCustom/custom-dire.component';
 import {CarComponent} from './pageDepence/car/car.component';
 import {FruitserveComponent} from './pageDepence/fruitserve/fruitserve.component';
 
+//表单模块
+import {TemplateformComponent} from './pageForm/templateform/templateform.component';//模板式表单
+import {ResponseformComponent} from './pageForm/responseform/responseform.component';//响应式表单
+
 const appRoutes:Routes=[
   {path:"login",component:LoginComponent},
   {path:"routemain",component:RoutemainComponent,children:[
@@ -31,7 +35,9 @@ const appRoutes:Routes=[
       {path:"direMix",component:DireMixComponent},//结构型指令
       {path:"direCus",component:CustomDireComponent},//自定义指令
       {path:"carInject",component:CarComponent},//汽车实例
-      {path:"fruitServe",component:FruitserveComponent}//水果服务
+      {path:"fruitServe",component:FruitserveComponent},//水果服务
+      {path:"templateform",component:TemplateformComponent},//模板式表单
+      {path:"responseform",component:ResponseformComponent}//响应式表单
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

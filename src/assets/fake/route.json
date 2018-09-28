@@ -32,6 +32,18 @@
               "link":"./fruitServe"
            }
          ]
+    },{
+      "name":"表单",
+      "arrList":[
+          {
+            "name":"模板式表单",
+            "link":"./templateform"
+          },
+          {
+            "name":"响应式表单",
+            "link":"./responseform"
+          }
+      ]
     }
   ]
 }

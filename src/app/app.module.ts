@@ -2,11 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {Routing} from  "./app.routes";
 import {CommonModule} from '@angular/common';
 import {LazyLoadImageModule} from "ng-lazyload-image";
 import {ElModule} from 'element-angular/release/element-angular.module';
+
 
 
 //指令模块
@@ -19,6 +21,10 @@ import {BorderDirective} from './pageDire/myDire/border.directive';
 //依赖注入
 import { CarComponent } from './pageDepence/car/car.component';
 import { FruitserveComponent } from './pageDepence/fruitserve/fruitserve.component'
+
+//Angular表单
+import { TemplateformComponent } from './pageForm/templateform/templateform.component';
+import { ResponseformComponent } from './pageForm/responseform/responseform.component'
 
 
 
@@ -40,7 +46,6 @@ import { ChildComponent } from './child/child.component';
 import { DireComponent } from './pageDire/direProperty/dire.component';
 import { DireMixComponent } from './pageDire/direMix/dire-mix.component';
 import {CustomDireComponent} from './pageDire/direCustom/custom-dire.component';
-
 
 
 
@@ -71,7 +76,9 @@ import {CustomDireComponent} from './pageDire/direCustom/custom-dire.component';
     StructDirective,
     BorderDirective,
     CarComponent,
-    FruitserveComponent
+    FruitserveComponent,
+    TemplateformComponent,
+    ResponseformComponent
    ],
   imports: [
     BrowserModule,
@@ -80,6 +87,7 @@ import {CustomDireComponent} from './pageDire/direCustom/custom-dire.component';
     HttpClientModule,
     FormsModule,
     RouterModule,
+    ReactiveFormsModule,
     ElModule.forRoot(),
     Routing
   ],

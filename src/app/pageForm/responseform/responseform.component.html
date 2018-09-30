@@ -1,3 +1,65 @@
-<p>
-  responseform works!
-</p>
+<div class="container">
+  <!--响应式表单~ONE-->
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">响应式表单~ONE</h3>
+    </div>
+    <div class="panel-body">
+      <div class="row clearfix">
+        <div class="col-md-6 col-xs-12 col-sm-12">
+          <form  role="form"  autocomplete="off">
+            <div class="form-group">
+                <input type="text" class="form-control"  name="user" [formControl]="userNameForm">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control"  name="user" [formControl]="userAgeForm">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--响应式表单~TWO-->
+  <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h3 class="panel-title">响应式表单~TWO</h3>
+    </div>
+    <div class="panel-body">
+      <div class="row clearfix">
+        <div class="col-md-6 col-xs-12 col-sm-12">
+          <form  role="form" autocomplete="off" [formGroup]="formModel" #myForm="ngForm" (submit)="subForm(myForm.value)">
+            <div class="form-group">
+                <label for="user">姓名</label>
+                <input type="text" class="form-control" id="user" name="user"  formControlName="username">
+            </div>
+            <div class="form-group">
+                <label for="age">年龄</label>
+                <input type="text" class="form-control" id="age"  name="age" formControlName="age">
+            </div>
+            <div class="form-group">
+                <label for="email">邮箱</label>
+                <input type="text" class="form-control" id="email" name="email" formControlName="email">
+            </div>
+            <div formGroupName="passwordGroup">
+                <div class="form-group">
+                  <label for="passPwdFirst">密码</label>
+                  <input type="text" class="form-control" id="passPwdFirst" name="passWordOne" formControlName="password">
+                </div>
+                <div class="form-group">
+                  <label for="passPwdSecond">确认密码</label>
+                  <input type="text" class="form-control" id="passPwdSecond" name="passWordTwo" formControlName="confirmPassword">
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-danger">提交</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="alert alert-info">
+        <p>{{ myForm.value | json}}</p>
+        <p>{{ subFormData | json}}</p>
+      </div>
+    </div>
+  </div>
+</div>

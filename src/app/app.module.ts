@@ -46,6 +46,7 @@ import { ChildComponent } from './child/child.component';
 import { DireComponent } from './pageDire/direProperty/dire.component';
 import { DireMixComponent } from './pageDire/direMix/dire-mix.component';
 import {CustomDireComponent} from './pageDire/direCustom/custom-dire.component';
+import { ValidatorformComponent } from './pageForm/validatorform/validatorform.component';
 
 
 
@@ -78,7 +79,8 @@ import {CustomDireComponent} from './pageDire/direCustom/custom-dire.component';
     CarComponent,
     FruitserveComponent,
     TemplateformComponent,
-    ResponseformComponent
+    ResponseformComponent,
+    ValidatorformComponent
    ],
   imports: [
     BrowserModule,

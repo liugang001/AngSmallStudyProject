@@ -22,6 +22,7 @@ import {FruitserveComponent} from './pageDepence/fruitserve/fruitserve.component
 //表单模块
 import {TemplateformComponent} from './pageForm/templateform/templateform.component';//模板式表单
 import {ResponseformComponent} from './pageForm/responseform/responseform.component';//响应式表单
+import {ValidatorformComponent} from './pageForm/validatorform/validatorform.component';//表单校验
 
 const appRoutes:Routes=[
   {path:"login",component:LoginComponent},
@@ -37,7 +38,8 @@ const appRoutes:Routes=[
       {path:"carInject",component:CarComponent},//汽车实例
       {path:"fruitServe",component:FruitserveComponent},//水果服务
       {path:"templateform",component:TemplateformComponent},//模板式表单
-      {path:"responseform",component:ResponseformComponent}//响应式表单
+      {path:"responseform",component:ResponseformComponent},//响应式表单
+      {path:"validatorform",component:ValidatorformComponent}//表单校验
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

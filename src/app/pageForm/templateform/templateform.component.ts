@@ -11,7 +11,7 @@ export class TemplateformComponent implements OnInit {
   * 注意：模板式表单的控制文件（.ts）中不会使用任何表单相关的API。
   * */
 
-  public onSubmit(value:any){
+  public onSubmit(value:any):void{
       console.log(value);
   }
 

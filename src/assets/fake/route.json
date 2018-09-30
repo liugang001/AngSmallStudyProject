@@ -42,6 +42,10 @@
           {
             "name":"响应式表单",
             "link":"./responseform"
+          },
+          {
+            "name":"表单校验",
+            "link":"./validatorform"
           }
       ]
     }

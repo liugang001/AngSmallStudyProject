@@ -11,24 +11,42 @@
             <div class="form-group">
               <label for="user">姓名</label>
               <input type="text" class="form-control" id="user" name="user"  formControlName="username">
+              <div [hidden]="formModel.get('username').valid || formModel.get('username').untouched"> <!---untouched  用户失去焦点的时候进行校验--->
+                  <p class="text-danger" [hidden]="!formModel.hasError('required','username')">*用户名称不能为空</p>
+                  <p class="text-danger" [hidden]="!formModel.hasError('maxlength','username')">*用户名称最大为3位</p>
+              </div>
             </div>
             <div class="form-group">
               <label for="age">年龄</label>
               <input type="text" class="form-control" id="age"  name="age" formControlName="age">
+              <div [hidden]="formModel.get('age').valid || formModel.get('age').pristine"><!--pristine  用户输入的时候进行校验--->
+                  <p class="text-danger" [hidden]="!formModel.hasError('required','age')">*年龄不能为空</p>
+                  <p class="text-danger" [hidden]="!formModel.hasError('pattern','age')">*年龄必须是2位数字,并且大于0</p>
+              </div>
             </div>
             <div class="form-group">
-              <label for="email">邮箱</label>
-              <input type="text" class="form-control" id="email" name="email" formControlName="email">
+              <label for="phone">手机号</label>
+              <input type="text" class="form-control" id="phone" name="phone" formControlName="phone">
+              <div [hidden]="formModel.get('phone').valid || formModel.get('phone').pristine">
+                  <p class="text-danger" [hidden]="!formModel.hasError('required','phone')">*手机号码不能为空</p>
+                  <p class="text-danger" [hidden]="!formModel.hasError('mobile','phone')">*手机号码格式不正确</p>
+              </div>
             </div>
-            <div formGroupName="passwordGroup">
-              <div class="form-group">
-                <label for="passPwdFirst">密码</label>
-                <input type="text" class="form-control" id="passPwdFirst" name="passWordOne" formControlName="password">
-              </div>
-              <div class="form-group">
-                <label for="passPwdSecond">确认密码</label>
-                <input type="text" class="form-control" id="passPwdSecond" name="passWordTwo" formControlName="confirmPassword">
-              </div>
+            <div formGroupName="passwordsGroup">
+                <div class="form-group">
+                    <label for="passPwdFirst">密码</label>
+                    <input type="text" class="form-control" id="passPwdFirst" name="passWordOne" formControlName="password">
+                    <p class="text-danger" [hidden]="!formModel.hasError('minlength',['passwordsGroup','password'])">
+                      *密码最小长度为6位
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label for="passPwdSecond">确认密码</label>
+                    <input type="text" class="form-control" id="passPwdSecond" name="passWordTwo" formControlName="confirmPassword">
+                    <p class="text-danger" [hidden]="!formModel.hasError('equal','passwordsGroup')">
+                      {{ formModel.getError('equal','passwordsGroup')?.pdesc }}
+                    </p>
+                </div>
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-danger">提交</button>

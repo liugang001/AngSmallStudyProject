@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormArray, FormControl, FormGroup,Validators,FormBuilder} from '@angular/forms';
+import {mobileValidator,equalValidator} from '../valid/validator';
 
 @Component({
   selector: 'app-validatorform',
@@ -25,19 +26,14 @@ export class ValidatorformComponent implements OnInit {
 
   constructor(fb:FormBuilder) {
     //设置表单的初始化值
-    this.formModel=new FormGroup({
-      username:new FormControl(),//用户姓名
-      age:new FormControl(),//用户名称
-      email:new FormControl(),//用户邮箱
-      passwordGroup:new FormGroup({
-        password: new FormControl(),
-        confirmPassword: new FormControl()
-      }),
-      listWordGroup:new FormArray([
-          new FormControl("34455"),
-          new FormControl("34455"),
-        ]
-      )
+    this.formModel=fb.group({
+      username:['',[Validators.required,Validators.maxLength(3)]],//用户姓名
+      age:['',[Validators.required,Validators.pattern('^[1-9]{1,2}$')]],//用户年龄
+      phone:['',[Validators.required,mobileValidator()]],//用户手机
+      passwordsGroup:fb.group({
+        password:['',[Validators.minLength(6)]],
+        confirmPassword:['',[Validators.minLength(6)]]
+      },{validator:equalValidator})
     })
   }
 

@@ -24,6 +24,11 @@ import {TemplateformComponent} from './pageForm/templateform/templateform.compon
 import {ResponseformComponent} from './pageForm/responseform/responseform.component';//响应式表单
 import {ValidatorformComponent} from './pageForm/validatorform/validatorform.component';//表单校验
 
+//Rxjs与服务
+import {PushlistComponent} from './pageService/pushlist/pushlist.component';
+import {HttprequestComponent} from './pageService/httprequest/httprequest.component';
+
+
 const appRoutes:Routes=[
   {path:"login",component:LoginComponent},
   {path:"routemain",component:RoutemainComponent,children:[
@@ -39,7 +44,9 @@ const appRoutes:Routes=[
       {path:"fruitServe",component:FruitserveComponent},//水果服务
       {path:"templateform",component:TemplateformComponent},//模板式表单
       {path:"responseform",component:ResponseformComponent},//响应式表单
-      {path:"validatorform",component:ValidatorformComponent}//表单校验
+      {path:"validatorform",component:ValidatorformComponent},//表单校验
+      {path:"pushList",component:PushlistComponent},//共享服务列表
+      {path:"requestWay",component:HttprequestComponent}
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

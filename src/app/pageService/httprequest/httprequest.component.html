@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">GET请求方式</div>
+        <div class="panel-body">
+            <h4 class="text-danger">收到的数据</h4>
+            <ul class="list-group">
+                <li class="list-group-item"  *ngFor="let item of priviceList;index as i"  >
+                    <span class="text-danger">{{i+1}}</span>
+                    <span class="text-success">{{item.name}}</span>
+                    <span class="text-warning">{{item.age}}</span>
+                    <span class="text-danger">{{item.address}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--POST请求方式-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">POST请求方式</div>
+        <div class="panel-body">
+            <h4 class="text-danger"> <button type="button" class="btn btn-primary" (click)="acceptPost()">点击获取数据</button></h4>
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let item of postList;index as i">
+                  <span class="text-danger">{{i+1}}</span>
+                  <span class="text-success">{{item.name}}</span>
+                  <span class="text-warning">{{item.age}}</span>
+                  <span class="text-danger">{{item.address}}</span>
+              </li>
+            </ul>
+        </div>
+    </div>
+</div>

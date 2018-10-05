@@ -20,7 +20,12 @@ export class ValidatorformComponent implements OnInit {
 
   //提交表单 subForm
   public subForm(val:any){
-    this.subFormData=val;
+    if(this.formModel.valid){
+        this.subFormData=val;
+        console.log(this.formModel.value)
+    }else{
+        this.subFormData='还有验证未通过';
+    }
   }
 
 
@@ -31,8 +36,8 @@ export class ValidatorformComponent implements OnInit {
       age:['',[Validators.required,Validators.pattern('^[1-9]{1,2}$')]],//用户年龄
       phone:['',[Validators.required,mobileValidator()]],//用户手机
       passwordsGroup:fb.group({
-        password:['',[Validators.minLength(6)]],
-        confirmPassword:['',[Validators.minLength(6)]]
+        password:['',Validators.minLength(6)],
+        confirmPassword:['',Validators.minLength(6)]
       },{validator:equalValidator})
     })
   }

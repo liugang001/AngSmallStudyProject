@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">服务列表添加</div>
+        <div class="panel-body">
+            <div class="btn-group">
+                <button type="button" (click)="addElement()" class="btn btn-primary">添加元素</button>
+                <button type="button" (click)="removeElement()" class="btn btn-danger">移除元素</button>
+            </div>
+            <div class="top-dis">
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let item of list">{{item}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

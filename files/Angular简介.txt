@@ -1,0 +1,138 @@
+
+ Angular简介：
+
+    一、重要网站网址：
+
+	angular中文官网：https://www.angular.cn/	
+	
+	Typescript中文官网：https://www.tslang.cn/
+
+	Angular-Github： github.com/angular/angular
+
+	Angular更新记录详情：https://github.com/angular/angular/blob/master/CHANGELOG.md
+
+	AngularCLI：https://github.com/angular/angular-cli
+
+
+    二、相关概念：
+	
+	Angular 1.x 版本统称为 AngularJS，Angular 2+ (4/5) 统称为Angular
+
+	目前版本： 
+		angularJS最新： 1.6.7 
+		angular最新： 5.0.0 beta.6 
+		官方文档稳定版：  angular 5.0.0 beta.4
+
+	选用第三方包以及组件：
+
+  		1、AngularJS, ng- 作为前缀的。
+
+  		2、Angular2， ng2- 作为前缀。
+
+  		3、Angular4/5  ngx- 作为前缀。
+  
+   		我们学习过程中唯一会用到一个组件UI库： ngx-bootstrap
+
+     三、Vue/React/Angular 对比（仅代表Derry老师个人看法）
+    
+	Vue/ react/ Angular 对比：AngularJS。
+
+        AngularJS： 
+        	优点：模板功能强大丰富，双向数据绑定（脏检查）,大大减少了我们前端开发代码量。 整个项目开发减少代码量： 1/3 ~ 1/4，引入测试的概念。
+	
+        	缺点：性能问题，双向数据绑定当绑定节点数量过于庞大（2000）。{{ }} ng-bind。   路由(vue 路由) 单层，路由不能嵌套。 ui-router（第三方的插件）。
+
+  	React ： 
+    		优点： 虚拟DOM ，让我们项目速度非常快。 Flux架构，redux，服务器端渲染。
+
+    		不足： 不适合单独作为完整的框架。需要结合其他的内容：reactNative。
+  
+  	Vue :
+    		优点: （轻量级，简单，中文文档齐全， 灵活），性能很好(尺寸真的很小)。
+
+    		缺点： （“个人主导”） 风险。  只关注WEB端。 官方不提供服务器端渲染。
+
+  	Angular：
+		优点： 完全组件化，装饰器语法 @component... 当对于JSX 更人性化一点。AngularCli  A command line interface for Angular 强大到惨绝人寰。（包办了所有非开发功能）量级上涉及到80多			个指令。 服务器端渲染，SEO。移动和桌面兼容 PWA ->  渐进式网页开发，依赖注入。
+
+	总结：    Angular  相当于是  大炮。
+
+   	  	  react    相当于是  重机枪。
+
+   	 	  Vue      相当于是  步枪。
+
+
+      四、目前这版本课程不会涉及到，但Angular深入开发可能会遇到的知识技能。
+
+   		1、ViewEncapsulation  视图封装。 Angular ：组件基于：Web Components：Custom Elements - 自定义元素、HTML Templates - HTML模板、Shadow DOM - 影子DOM、 HTML Imports - HTML导入
+
+  		2、Angular 统一平台（Universal）
+
+   		3、IOC/DI  软件工程中。
+
+   		4、ngrx/store -->  angular2-redux  -》TypeScript redux。
+
+   		5、变更检测：zone.js -> ngZone。  AngularJS:脏检查， Vue -set、get。
+
+   		6、JIT/AOT。
+
+
+
+   =======================================================》
+
+
+    Angular 架构总览：架构是有关软件整体结构与组件的抽象描述
+
+    数据：基于数据流的响应式编程方式
+ 
+    考虑人的架构：
+ 
+    	1、头、躯干、身体。( Modules)
+
+    	2、心脏、肝、肾....  手掌、手臂、脚掌、眼睛、鼻子...  灵魂。( Components )
+  
+      	   心脏跟你的肝。  心肝宝贝。
+
+    	3、关注：长相, 身高, 体重，毛发。
+
+   	4、元数据：淋巴器官、白细胞、红细胞。
+
+    	5、指令： 神经系统（内置指令）、激素(自定义指令)。
+
+    	6、服务： 东莞，里面有很多的服务。 交互层次上的东西。 身份，地位，性格，能力。 谈朋友，美女！     (汕头).
+
+    	7、依赖注入： Angular中注入单例使用。  组件中，服务中，....
+
+   	   我们消化系统: 嘴巴吃东西 -> 喉咙食道 ->  胃  ->  小肠 - > 大肠 ->  菊花。 涉及到 “酶”“氨酚”。 注入方与被注入方是用户自己决定的。
+
+        8、路由。 Angular。根据需要决定我们要访问哪个页面。
+
+    	   生理需求、本能判断。 
+
+   		初级： 肚子饿了 -> 路由 -> 就想吃东西。   高级： think，就想小姐姐。
+   
+          	       渴了，就想喝水。
+    
+          	       膝跳反射.... 
+
+    	   Angular中 路由从头到尾 都在工作。 localhost:4200.  -》 index.html pageNotFound ->  
+   
+
+    架构解释七个核心概念：
+
+      1、模块( Modules ) appModules  贯穿我们整个课程。
+ 
+      2、组件( Components) 04节课会讲
+
+      3、模板（ Templates ） Html  <template> 05、06、CRUD
+
+      4、元数据( Metadata )。贯穿整个课程。
+     
+      5、指令( Directive ) （内置指令） 07
+      
+      6、服务 ( Services ) 。 10
+
+      7、依赖注入 ( Dependency Injection  ) 09
+  
+      8、路由 HTTP跳转 SPA我们所有的项目都在index.html。08
+  

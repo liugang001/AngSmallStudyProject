@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
 export class LoginComponent implements OnInit {
 
   listArr:any[]=[
-     {name:"演示区一",link:"../routemain/home"},
+     {name:"组件",link:"../routemain/lazycomponent"},
      {name:"演示区二",link:"../routemain/home"},
      {name:"演示区三",link:"../routemain/home"},
      {name:"指令",link:"../routemain/home"},

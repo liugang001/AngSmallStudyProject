@@ -1,6 +1,14 @@
 {
   "result":[
-    {"arrList":[]},
+    {
+      "name":"组件",
+      "arrList":[
+        {
+          "name":"组件模型",
+          "link":"./lazycomponent"
+        }
+      ]
+    },
     {"arrList":[]},
     {"arrList":[]},
     {

@@ -30,6 +30,7 @@ import {HttprequestComponent} from './pageService/httprequest/httprequest.compon
 import {RxjsmodelComponent} from './pageService/rxjsmodel/rxjsmodel.component';
 
 
+
 const appRoutes:Routes=[
   {path:"login",component:LoginComponent},
   {path:"routemain",component:RoutemainComponent,children:[
@@ -48,7 +49,8 @@ const appRoutes:Routes=[
       {path:"validatorform",component:ValidatorformComponent},//表单校验
       {path:"pushList",component:PushlistComponent},//共享服务列表
       {path:"requestWay",component:HttprequestComponent},//请求方式
-      {path:"rxjsModel",component:RxjsmodelComponent}
+      {path:"rxjsModel",component:RxjsmodelComponent},//Rxjs
+      {path:"",loadChildren:"./componentPage/lazymodule/lazymodule.module#LazymoduleModule"}
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

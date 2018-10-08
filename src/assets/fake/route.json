@@ -58,6 +58,10 @@
         },{
           "name":"请求方式",
           "link":"./requestWay"
+        },
+        {
+          "name":"RXJS",
+          "link":"./rxjsModel"
         }
       ]
     }

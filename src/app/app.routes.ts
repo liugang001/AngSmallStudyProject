@@ -27,6 +27,7 @@ import {ValidatorformComponent} from './pageForm/validatorform/validatorform.com
 //Rxjs与服务
 import {PushlistComponent} from './pageService/pushlist/pushlist.component';
 import {HttprequestComponent} from './pageService/httprequest/httprequest.component';
+import {RxjsmodelComponent} from './pageService/rxjsmodel/rxjsmodel.component';
 
 
 const appRoutes:Routes=[
@@ -46,7 +47,8 @@ const appRoutes:Routes=[
       {path:"responseform",component:ResponseformComponent},//响应式表单
       {path:"validatorform",component:ValidatorformComponent},//表单校验
       {path:"pushList",component:PushlistComponent},//共享服务列表
-      {path:"requestWay",component:HttprequestComponent}
+      {path:"requestWay",component:HttprequestComponent},//请求方式
+      {path:"rxjsModel",component:RxjsmodelComponent}
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

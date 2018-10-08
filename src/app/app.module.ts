@@ -34,7 +34,7 @@ import { ValidatorformComponent } from './pageForm/validatorform/validatorform.c
 //Rxjs与依赖注入
 import { PushlistComponent } from './pageService/pushlist/pushlist.component';
 import { HttprequestComponent } from './pageService/httprequest/httprequest.component';
-
+import { RxjsmodelComponent } from './pageService/rxjsmodel/rxjsmodel.component';
 
 
 
@@ -52,6 +52,7 @@ import { ContentComponent } from './content/content.component';
 import { TitleTextComponent } from './content/title-text/title-text.component';
 import { LayuiComponent } from './layui/layui.component';
 import { ChildComponent } from './child/child.component';
+
 
 
 
@@ -90,6 +91,7 @@ import { ChildComponent } from './child/child.component';
     ResponseformComponent,
     ValidatorformComponent,
     PushlistComponent,
+    RxjsmodelComponent,
     HttprequestComponent
    ],
   imports: [

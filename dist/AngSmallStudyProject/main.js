@@ -5,21 +5,33 @@
   !*** ./src/$$_lazy_route_resource lazy namespace object ***!
   \**********************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncaught exception popping up in devtools
-	return Promise.resolve().then(function() {
-		var e = new Error('Cannot find module "' + req + '".');
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
+var map = {
+	"./componentPage/lazymodule/lazymodule.module": [
+		"./src/app/componentPage/lazymodule/lazymodule.module.ts",
+		"componentPage-lazymodule-lazymodule-module"
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids) {
+		return Promise.resolve().then(function() {
+			var e = new Error('Cannot find module "' + req + '".');
+			e.code = 'MODULE_NOT_FOUND';
+			throw e;
+		});
+	}
+	return __webpack_require__.e(ids[1]).then(function() {
+		var module = __webpack_require__(ids[0]);
+		return module;
 	});
 }
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+module.exports = webpackAsyncContext;
 
 /***/ }),
 
@@ -104,25 +116,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pageDire_myDire_color_event_directive__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pageDire/myDire/color-event.directive */ "./src/app/pageDire/myDire/color-event.directive.ts");
 /* harmony import */ var _pageDire_myDire_struct_directive__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pageDire/myDire/struct.directive */ "./src/app/pageDire/myDire/struct.directive.ts");
 /* harmony import */ var _pageDire_myDire_border_directive__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pageDire/myDire/border.directive */ "./src/app/pageDire/myDire/border.directive.ts");
-/* harmony import */ var _pageDepence_car_car_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pageDepence/car/car.component */ "./src/app/pageDepence/car/car.component.ts");
-/* harmony import */ var _pageDepence_fruitserve_fruitserve_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pageDepence/fruitserve/fruitserve.component */ "./src/app/pageDepence/fruitserve/fruitserve.component.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
-/* harmony import */ var _images_images_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./images/images.component */ "./src/app/images/images.component.ts");
-/* harmony import */ var _texts_texts_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./texts/texts.component */ "./src/app/texts/texts.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _common_error_error_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./common/error/error.component */ "./src/app/common/error/error.component.ts");
-/* harmony import */ var _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./pipe/filter.pipe */ "./src/app/pipe/filter.pipe.ts");
-/* harmony import */ var _pipe_getdate_pipe__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pipe/getdate.pipe */ "./src/app/pipe/getdate.pipe.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./routemain/routemain.component */ "./src/app/routemain/routemain.component.ts");
-/* harmony import */ var _content_content_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./content/content.component */ "./src/app/content/content.component.ts");
-/* harmony import */ var _content_title_text_title_text_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./content/title-text/title-text.component */ "./src/app/content/title-text/title-text.component.ts");
-/* harmony import */ var _layui_layui_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./layui/layui.component */ "./src/app/layui/layui.component.ts");
-/* harmony import */ var _child_child_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./child/child.component */ "./src/app/child/child.component.ts");
-/* harmony import */ var _pageDire_direProperty_dire_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./pageDire/direProperty/dire.component */ "./src/app/pageDire/direProperty/dire.component.ts");
-/* harmony import */ var _pageDire_direMix_dire_mix_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./pageDire/direMix/dire-mix.component */ "./src/app/pageDire/direMix/dire-mix.component.ts");
-/* harmony import */ var _pageDire_direCustom_custom_dire_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./pageDire/direCustom/custom-dire.component */ "./src/app/pageDire/direCustom/custom-dire.component.ts");
+/* harmony import */ var _pageDire_direProperty_dire_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pageDire/direProperty/dire.component */ "./src/app/pageDire/direProperty/dire.component.ts");
+/* harmony import */ var _pageDire_direMix_dire_mix_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pageDire/direMix/dire-mix.component */ "./src/app/pageDire/direMix/dire-mix.component.ts");
+/* harmony import */ var _pageDire_direCustom_custom_dire_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pageDire/direCustom/custom-dire.component */ "./src/app/pageDire/direCustom/custom-dire.component.ts");
+/* harmony import */ var _pageDepence_car_car_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pageDepence/car/car.component */ "./src/app/pageDepence/car/car.component.ts");
+/* harmony import */ var _pageDepence_fruitserve_fruitserve_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pageDepence/fruitserve/fruitserve.component */ "./src/app/pageDepence/fruitserve/fruitserve.component.ts");
+/* harmony import */ var _pageForm_templateform_templateform_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pageForm/templateform/templateform.component */ "./src/app/pageForm/templateform/templateform.component.ts");
+/* harmony import */ var _pageForm_responseform_responseform_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pageForm/responseform/responseform.component */ "./src/app/pageForm/responseform/responseform.component.ts");
+/* harmony import */ var _pageForm_validatorform_validatorform_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pageForm/validatorform/validatorform.component */ "./src/app/pageForm/validatorform/validatorform.component.ts");
+/* harmony import */ var _pageService_pushlist_pushlist_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./pageService/pushlist/pushlist.component */ "./src/app/pageService/pushlist/pushlist.component.ts");
+/* harmony import */ var _pageService_httprequest_httprequest_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pageService/httprequest/httprequest.component */ "./src/app/pageService/httprequest/httprequest.component.ts");
+/* harmony import */ var _pageService_rxjsmodel_rxjsmodel_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pageService/rxjsmodel/rxjsmodel.component */ "./src/app/pageService/rxjsmodel/rxjsmodel.component.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
+/* harmony import */ var _images_images_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./images/images.component */ "./src/app/images/images.component.ts");
+/* harmony import */ var _texts_texts_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./texts/texts.component */ "./src/app/texts/texts.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _common_error_error_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./common/error/error.component */ "./src/app/common/error/error.component.ts");
+/* harmony import */ var _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./pipe/filter.pipe */ "./src/app/pipe/filter.pipe.ts");
+/* harmony import */ var _pipe_getdate_pipe__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./pipe/getdate.pipe */ "./src/app/pipe/getdate.pipe.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./routemain/routemain.component */ "./src/app/routemain/routemain.component.ts");
+/* harmony import */ var _content_content_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./content/content.component */ "./src/app/content/content.component.ts");
+/* harmony import */ var _content_title_text_title_text_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./content/title-text/title-text.component */ "./src/app/content/title-text/title-text.component.ts");
+/* harmony import */ var _layui_layui_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./layui/layui.component */ "./src/app/layui/layui.component.ts");
+/* harmony import */ var _child_child_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./child/child.component */ "./src/app/child/child.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -138,7 +156,11 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 //指令模块
+
+
+
 
 
 
@@ -146,6 +168,11 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 //依赖注入
 
 
+//Angular表单
+
+
+
+//Rxjs与依赖注入
 
 
 
@@ -169,29 +196,35 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_15__["AppComponent"],
-                _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_16__["NavbarComponent"],
-                _images_images_component__WEBPACK_IMPORTED_MODULE_17__["ImagesComponent"],
-                _texts_texts_component__WEBPACK_IMPORTED_MODULE_18__["TextsComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_19__["HomeComponent"],
-                _login_login_component__WEBPACK_IMPORTED_MODULE_23__["LoginComponent"],
-                _common_error_error_component__WEBPACK_IMPORTED_MODULE_20__["ErrorComponent"],
-                _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_21__["FilterPipe"],
-                _pipe_getdate_pipe__WEBPACK_IMPORTED_MODULE_22__["GetdatePipe"],
-                _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_24__["RoutemainComponent"],
-                _content_content_component__WEBPACK_IMPORTED_MODULE_25__["ContentComponent"],
-                _content_title_text_title_text_component__WEBPACK_IMPORTED_MODULE_26__["TitleTextComponent"],
-                _layui_layui_component__WEBPACK_IMPORTED_MODULE_27__["LayuiComponent"],
-                _child_child_component__WEBPACK_IMPORTED_MODULE_28__["ChildComponent"],
-                _pageDire_direProperty_dire_component__WEBPACK_IMPORTED_MODULE_29__["DireComponent"],
-                _pageDire_direMix_dire_mix_component__WEBPACK_IMPORTED_MODULE_30__["DireMixComponent"],
-                _pageDire_direCustom_custom_dire_component__WEBPACK_IMPORTED_MODULE_31__["CustomDireComponent"],
+                _app_component__WEBPACK_IMPORTED_MODULE_24__["AppComponent"],
+                _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_25__["NavbarComponent"],
+                _images_images_component__WEBPACK_IMPORTED_MODULE_26__["ImagesComponent"],
+                _texts_texts_component__WEBPACK_IMPORTED_MODULE_27__["TextsComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_28__["HomeComponent"],
+                _login_login_component__WEBPACK_IMPORTED_MODULE_32__["LoginComponent"],
+                _common_error_error_component__WEBPACK_IMPORTED_MODULE_29__["ErrorComponent"],
+                _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_30__["FilterPipe"],
+                _pipe_getdate_pipe__WEBPACK_IMPORTED_MODULE_31__["GetdatePipe"],
+                _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_33__["RoutemainComponent"],
+                _content_content_component__WEBPACK_IMPORTED_MODULE_34__["ContentComponent"],
+                _content_title_text_title_text_component__WEBPACK_IMPORTED_MODULE_35__["TitleTextComponent"],
+                _layui_layui_component__WEBPACK_IMPORTED_MODULE_36__["LayuiComponent"],
+                _child_child_component__WEBPACK_IMPORTED_MODULE_37__["ChildComponent"],
+                _pageDire_direProperty_dire_component__WEBPACK_IMPORTED_MODULE_13__["DireComponent"],
+                _pageDire_direMix_dire_mix_component__WEBPACK_IMPORTED_MODULE_14__["DireMixComponent"],
+                _pageDire_direCustom_custom_dire_component__WEBPACK_IMPORTED_MODULE_15__["CustomDireComponent"],
                 _pageDire_myDire_my_color_directive__WEBPACK_IMPORTED_MODULE_9__["MyColorDirective"],
                 _pageDire_myDire_color_event_directive__WEBPACK_IMPORTED_MODULE_10__["ColorEventDirective"],
                 _pageDire_myDire_struct_directive__WEBPACK_IMPORTED_MODULE_11__["StructDirective"],
                 _pageDire_myDire_border_directive__WEBPACK_IMPORTED_MODULE_12__["BorderDirective"],
-                _pageDepence_car_car_component__WEBPACK_IMPORTED_MODULE_13__["CarComponent"],
-                _pageDepence_fruitserve_fruitserve_component__WEBPACK_IMPORTED_MODULE_14__["FruitserveComponent"]
+                _pageDepence_car_car_component__WEBPACK_IMPORTED_MODULE_16__["CarComponent"],
+                _pageDepence_fruitserve_fruitserve_component__WEBPACK_IMPORTED_MODULE_17__["FruitserveComponent"],
+                _pageForm_templateform_templateform_component__WEBPACK_IMPORTED_MODULE_18__["TemplateformComponent"],
+                _pageForm_responseform_responseform_component__WEBPACK_IMPORTED_MODULE_19__["ResponseformComponent"],
+                _pageForm_validatorform_validatorform_component__WEBPACK_IMPORTED_MODULE_20__["ValidatorformComponent"],
+                _pageService_pushlist_pushlist_component__WEBPACK_IMPORTED_MODULE_21__["PushlistComponent"],
+                _pageService_rxjsmodel_rxjsmodel_component__WEBPACK_IMPORTED_MODULE_23__["RxjsmodelComponent"],
+                _pageService_httprequest_httprequest_component__WEBPACK_IMPORTED_MODULE_22__["HttprequestComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -200,11 +233,12 @@ var AppModule = /** @class */ (function () {
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
                 element_angular_release_element_angular_module__WEBPACK_IMPORTED_MODULE_8__["ElModule"].forRoot(),
                 _app_routes__WEBPACK_IMPORTED_MODULE_5__["Routing"]
             ],
-            providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_15__["AppComponent"]]
+            providers: [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientJsonpModule"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_24__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -238,6 +272,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pageDire_direCustom_custom_dire_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pageDire/direCustom/custom-dire.component */ "./src/app/pageDire/direCustom/custom-dire.component.ts");
 /* harmony import */ var _pageDepence_car_car_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pageDepence/car/car.component */ "./src/app/pageDepence/car/car.component.ts");
 /* harmony import */ var _pageDepence_fruitserve_fruitserve_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pageDepence/fruitserve/fruitserve.component */ "./src/app/pageDepence/fruitserve/fruitserve.component.ts");
+/* harmony import */ var _pageForm_templateform_templateform_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pageForm/templateform/templateform.component */ "./src/app/pageForm/templateform/templateform.component.ts");
+/* harmony import */ var _pageForm_responseform_responseform_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pageForm/responseform/responseform.component */ "./src/app/pageForm/responseform/responseform.component.ts");
+/* harmony import */ var _pageForm_validatorform_validatorform_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pageForm/validatorform/validatorform.component */ "./src/app/pageForm/validatorform/validatorform.component.ts");
+/* harmony import */ var _pageService_pushlist_pushlist_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pageService/pushlist/pushlist.component */ "./src/app/pageService/pushlist/pushlist.component.ts");
+/* harmony import */ var _pageService_httprequest_httprequest_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pageService/httprequest/httprequest.component */ "./src/app/pageService/httprequest/httprequest.component.ts");
+/* harmony import */ var _pageService_rxjsmodel_rxjsmodel_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pageService/rxjsmodel/rxjsmodel.component */ "./src/app/pageService/rxjsmodel/rxjsmodel.component.ts");
 //创建路由配置文件
 
 
@@ -255,6 +295,14 @@ __webpack_require__.r(__webpack_exports__);
 //依赖注入
 
 
+//表单模块
+ //模板式表单
+ //响应式表单
+ //表单校验
+//Rxjs与服务
+
+
+
 var appRoutes = [
     { path: "login", component: _login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"] },
     { path: "routemain", component: _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_6__["RoutemainComponent"], children: [
@@ -267,7 +315,14 @@ var appRoutes = [
             { path: "direMix", component: _pageDire_direMix_dire_mix_component__WEBPACK_IMPORTED_MODULE_10__["DireMixComponent"] },
             { path: "direCus", component: _pageDire_direCustom_custom_dire_component__WEBPACK_IMPORTED_MODULE_11__["CustomDireComponent"] },
             { path: "carInject", component: _pageDepence_car_car_component__WEBPACK_IMPORTED_MODULE_12__["CarComponent"] },
-            { path: "fruitServe", component: _pageDepence_fruitserve_fruitserve_component__WEBPACK_IMPORTED_MODULE_13__["FruitserveComponent"] } //水果服务
+            { path: "fruitServe", component: _pageDepence_fruitserve_fruitserve_component__WEBPACK_IMPORTED_MODULE_13__["FruitserveComponent"] },
+            { path: "templateform", component: _pageForm_templateform_templateform_component__WEBPACK_IMPORTED_MODULE_14__["TemplateformComponent"] },
+            { path: "responseform", component: _pageForm_responseform_responseform_component__WEBPACK_IMPORTED_MODULE_15__["ResponseformComponent"] },
+            { path: "validatorform", component: _pageForm_validatorform_validatorform_component__WEBPACK_IMPORTED_MODULE_16__["ValidatorformComponent"] },
+            { path: "pushList", component: _pageService_pushlist_pushlist_component__WEBPACK_IMPORTED_MODULE_17__["PushlistComponent"] },
+            { path: "requestWay", component: _pageService_httprequest_httprequest_component__WEBPACK_IMPORTED_MODULE_18__["HttprequestComponent"] },
+            { path: "rxjsModel", component: _pageService_rxjsmodel_rxjsmodel_component__WEBPACK_IMPORTED_MODULE_19__["RxjsmodelComponent"] },
+            { path: "", loadChildren: "./componentPage/lazymodule/lazymodule.module#LazymoduleModule" }
         ] },
     { path: "", redirectTo: "/login", pathMatch: "full" },
     { path: "**", component: _common_error_error_component__WEBPACK_IMPORTED_MODULE_3__["ErrorComponent"] }
@@ -800,7 +855,7 @@ var LayuiComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".box {\r\n  width: 100%;\r\n  height: 100%;\r\n  background:black;\r\n  position: fixed;\r\n  top: 0;\r\n  z-index: 5;\r\n}\r\nul,ol{padding:0;margin:0;}\r\nul li{\r\n  list-style:none;\r\n}\r\n.pCenter {\r\n  position: absolute;\r\n  margin: auto;\r\n  left: 0;\r\n  right: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n  margin: auto;\r\n}\r\n#content {\r\n  width: 580px;\r\n  height: 380px;\r\n  background: rgba(255,255,255,.4);\r\n  border-radius: 5px;\r\n  padding:10px;\r\n}\r\n#content ul{\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  flex-wrap: wrap;\r\n}\r\n#content ul li {\r\n  width: 100px;\r\n  height: 40px;\r\n  border:1px solid #fff;\r\n  border-radius:3px;\r\n  font-size:16px;\r\n  display:inline-flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  color:#fff;\r\n  margin:10px 0;\r\n  cursor: pointer;\r\n  transition:all .5s ease-in;\r\n}\r\n#content ul li:hover{\r\n  background:rgba(255,255,255,.4)\r\n}\r\n"
+module.exports = ".box {\r\n  width: 100%;\r\n  height: 100%;\r\n  background:black;\r\n  position: fixed;\r\n  top: 0;\r\n  z-index: 5;\r\n}\r\nul,ol{padding:0;margin:0;}\r\nul li{\r\n  list-style:none;\r\n}\r\n.pCenter {\r\n  position: absolute;\r\n  margin: auto;\r\n  left: 0;\r\n  right: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n  margin: auto;\r\n}\r\n#content {\r\n  width: 580px;\r\n  height: 380px;\r\n  background: rgba(255,255,255,.4);\r\n  border-radius: 5px;\r\n  padding:10px;\r\n}\r\n#content ul{\r\n  display: flex;\r\n  justify-content:flex-start;\r\n  align-items: center;\r\n  flex-wrap: wrap;\r\n}\r\n#content ul li {\r\n  width: 100px;\r\n  height: 40px;\r\n  border:1px solid #fff;\r\n  border-radius:3px;\r\n  font-size:16px;\r\n  display:inline-flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  color:#fff;\r\n  margin:10px 0;\r\n  cursor: pointer;\r\n  transition:all .5s ease-in;\r\n  margin-right:12px;\r\n}\r\n#content ul li:hover{\r\n  background:rgba(255,255,255,.4)\r\n}\r\n"
 
 /***/ }),
 
@@ -842,11 +897,13 @@ var LoginComponent = /** @class */ (function () {
     function LoginComponent(route) {
         this.route = route;
         this.listArr = [
-            { name: "演示区一", link: "../routemain/home" },
+            { name: "组件", link: "../routemain/lazycomponent" },
             { name: "演示区二", link: "../routemain/home" },
             { name: "演示区三", link: "../routemain/home" },
             { name: "指令", link: "../routemain/home" },
             { name: "依赖注入", link: "../routemain/home" },
+            { name: "表单", link: "../routemain/templateform" },
+            { name: "rxjs与服务", link: "../routemain/pushList" }
         ];
     }
     LoginComponent.prototype.goRoute = function (linkPath, i) {
@@ -1962,6 +2019,586 @@ var StructDirective = /** @class */ (function () {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"]])
     ], StructDirective);
     return StructDirective;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pageForm/responseform/responseform.component.css":
+/*!******************************************************************!*\
+  !*** ./src/app/pageForm/responseform/responseform.component.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/pageForm/responseform/responseform.component.html":
+/*!*******************************************************************!*\
+  !*** ./src/app/pageForm/responseform/responseform.component.html ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <!--响应式表单~ONE-->\n  <div class=\"panel panel-success\">\n    <div class=\"panel-heading\">\n      <h3 class=\"panel-title\">响应式表单~ONE</h3>\n    </div>\n    <div class=\"panel-body\">\n      <div class=\"row clearfix\">\n        <div class=\"col-md-6 col-xs-12 col-sm-12\">\n          <form  role=\"form\"  autocomplete=\"off\">\n            <div class=\"form-group\">\n                <input type=\"text\" class=\"form-control\"  name=\"user\" [formControl]=\"userNameForm\">\n            </div>\n            <div class=\"form-group\">\n              <input type=\"text\" class=\"form-control\"  name=\"user\" [formControl]=\"userAgeForm\">\n            </div>\n          </form>\n        </div>\n      </div>\n    </div>\n  </div>\n  <!--响应式表单~TWO-->\n  <div class=\"panel panel-danger\">\n    <div class=\"panel-heading\">\n      <h3 class=\"panel-title\">响应式表单~TWO</h3>\n    </div>\n    <div class=\"panel-body\">\n      <div class=\"row clearfix\">\n        <div class=\"col-md-6 col-xs-12 col-sm-12\">\n          <form  role=\"form\" autocomplete=\"off\" [formGroup]=\"formModel\" #myForm=\"ngForm\" (submit)=\"subForm(myForm.value)\">\n            <div class=\"form-group\">\n                <label for=\"user\">姓名</label>\n                <input type=\"text\" class=\"form-control\" id=\"user\" name=\"user\"  formControlName=\"username\">\n            </div>\n            <div class=\"form-group\">\n                <label for=\"age\">年龄</label>\n                <input type=\"text\" class=\"form-control\" id=\"age\"  name=\"age\" formControlName=\"age\">\n            </div>\n            <div class=\"form-group\">\n                <label for=\"email\">邮箱</label>\n                <input type=\"text\" class=\"form-control\" id=\"email\" name=\"email\" formControlName=\"email\">\n            </div>\n            <div formGroupName=\"passwordGroup\">\n                <div class=\"form-group\">\n                  <label for=\"passPwdFirst\">密码</label>\n                  <input type=\"text\" class=\"form-control\" id=\"passPwdFirst\" name=\"passWordOne\" formControlName=\"password\">\n                </div>\n                <div class=\"form-group\">\n                  <label for=\"passPwdSecond\">确认密码</label>\n                  <input type=\"text\" class=\"form-control\" id=\"passPwdSecond\" name=\"passWordTwo\" formControlName=\"confirmPassword\">\n                </div>\n            </div>\n            <div class=\"form-group\">\n                <button type=\"submit\" class=\"btn btn-danger\">提交</button>\n            </div>\n          </form>\n        </div>\n      </div>\n      <div class=\"alert alert-info\">\n        <p>{{ myForm.value | json}}</p>\n        <p>{{ subFormData | json}}</p>\n      </div>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/pageForm/responseform/responseform.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/pageForm/responseform/responseform.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: ResponseformComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResponseformComponent", function() { return ResponseformComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ResponseformComponent = /** @class */ (function () {
+    function ResponseformComponent(fb) {
+        //用户名称选择
+        this.userNameForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('LIUGANG');
+        this.userAgeForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('84');
+        //日历的选择
+        this.myFormModel = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
+            from: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("start date"),
+            to: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("end date")
+        });
+        //处理可变的元素 数组
+        this.myEmail = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormArray"]([
+            new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("gang@qq.com"),
+            new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("wang@qq.com"),
+            new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("pang@qq.com"),
+        ]);
+        this.formModel = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
+            username: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](),
+            age: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](),
+            email: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](),
+            passwordGroup: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
+                password: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](),
+                confirmPassword: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]()
+            }),
+            listWordGroup: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormArray"]([
+                new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("34455"),
+                new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("34455"),
+            ])
+        });
+    }
+    /*
+    * 提交表单
+    * subForm
+    * */
+    ResponseformComponent.prototype.subForm = function (val) {
+        this.subFormData = val;
+    };
+    ResponseformComponent.prototype.ngOnInit = function () {
+        console.log(this.userNameForm);
+        console.log(this.myFormModel);
+        console.log(this.myEmail);
+    };
+    ResponseformComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-responseform',
+            template: __webpack_require__(/*! ./responseform.component.html */ "./src/app/pageForm/responseform/responseform.component.html"),
+            styles: [__webpack_require__(/*! ./responseform.component.css */ "./src/app/pageForm/responseform/responseform.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]])
+    ], ResponseformComponent);
+    return ResponseformComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pageForm/templateform/templateform.component.css":
+/*!******************************************************************!*\
+  !*** ./src/app/pageForm/templateform/templateform.component.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/pageForm/templateform/templateform.component.html":
+/*!*******************************************************************!*\
+  !*** ./src/app/pageForm/templateform/templateform.component.html ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"panel panel-primary\">\n    <div class=\"panel-heading\">\n      <h3 class=\"panel-title\">模板式表单</h3>\n    </div>\n    <div class=\"panel-body\">\n      <div class=\"row clearfix\">\n          <div class=\"col-md-6 col-xs-12 col-sm-12\">\n              <form  role=\"form\" #myForm=\"ngForm\"  autocomplete=\"off\"  (ngSubmit)=\"onSubmit(myForm.value)\">\n                <div class=\"form-group\">\n                  <label for=\"user\">姓名</label>\n                  <input type=\"text\" class=\"form-control\" id=\"user\" name=\"user\" ngModel #user=\"ngModel\" >\n                </div>\n                <div class=\"form-group\">\n                  <label for=\"age\">年龄</label>\n                  <input type=\"text\" class=\"form-control\" id=\"age\"  name=\"age\" ngModel>\n                </div>\n                <div class=\"form-group\">\n                  <label for=\"email\">邮箱</label>\n                  <input type=\"text\" class=\"form-control\" id=\"email\" name=\"email\" ngModel>\n                </div>\n                <div ngModelGroup=\"passWordGroup\">\n                  <div class=\"form-group\">\n                    <label for=\"passPwdFirst\">密码</label>\n                    <input type=\"text\" class=\"form-control\" id=\"passPwdFirst\" name=\"passWordOne\" ngModel>\n                  </div>\n                  <div class=\"form-group\">\n                    <label for=\"passPwdSecond\">密码</label>\n                    <input type=\"text\" class=\"form-control\" id=\"passPwdSecond\" name=\"passWordTwo\" ngModel>\n                  </div>\n                </div>\n                <div class=\"form-group\">\n                  <button type=\"submit\" class=\"btn btn-primary\">提交</button>\n                </div>\n              </form>\n          </div>\n      </div>\n      <div class=\"alert alert-info\">\n        <p>{{myForm.value | json}}</p>\n        <p>{{user.value}}</p>\n      </div>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/pageForm/templateform/templateform.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/pageForm/templateform/templateform.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: TemplateformComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TemplateformComponent", function() { return TemplateformComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TemplateformComponent = /** @class */ (function () {
+    function TemplateformComponent() {
+    }
+    /*
+    * 注意：模板式表单的控制文件（.ts）中不会使用任何表单相关的API。
+    * */
+    TemplateformComponent.prototype.onSubmit = function (value) {
+        console.log(value);
+    };
+    TemplateformComponent.prototype.ngOnInit = function () { };
+    TemplateformComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-templateform',
+            template: __webpack_require__(/*! ./templateform.component.html */ "./src/app/pageForm/templateform/templateform.component.html"),
+            styles: [__webpack_require__(/*! ./templateform.component.css */ "./src/app/pageForm/templateform/templateform.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], TemplateformComponent);
+    return TemplateformComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pageForm/valid/validator.ts":
+/*!*********************************************!*\
+  !*** ./src/app/pageForm/valid/validator.ts ***!
+  \*********************************************/
+/*! exports provided: mobileValidator, equalValidator */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mobileValidator", function() { return mobileValidator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "equalValidator", function() { return equalValidator; });
+//校验手机号码
+function mobileValidator() {
+    return function (control) {
+        var myreq = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+        var valid = myreq.test(control.value);
+        //console.log("手机校验的结果为:"+valid);
+        //验证规则，验证通过的时候返回null，验证不过的时候返回信息。
+        return valid ? null : { mobile: true };
+    };
+}
+// 多控件一起校验
+function equalValidator(group) {
+    var password = group.get('password');
+    var cpassword = group.get('confirmPassword');
+    var valid = (password.value === cpassword.value);
+    //console.log('密码校验结果为: ' + valid);
+    return valid ? null : { equal: { pdesc: '密码和确认密码不匹配' } };
+}
+
+
+/***/ }),
+
+/***/ "./src/app/pageForm/validatorform/validatorform.component.css":
+/*!********************************************************************!*\
+  !*** ./src/app/pageForm/validatorform/validatorform.component.css ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/pageForm/validatorform/validatorform.component.html":
+/*!*********************************************************************!*\
+  !*** ./src/app/pageForm/validatorform/validatorform.component.html ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!--响应式表单~TWO-->\r\n<div class=\"container\">\r\n  <div class=\"panel panel-primary\">\r\n    <div class=\"panel-heading\">\r\n      <h3 class=\"panel-title\">表单校验</h3>\r\n    </div>\r\n    <div class=\"panel-body\">\r\n      <div class=\"row clearfix\">\r\n        <div class=\"col-md-6 col-xs-12 col-sm-12\">\r\n          <form  role=\"form\" autocomplete=\"off\" [formGroup]=\"formModel\" #myForm=\"ngForm\" (submit)=\"subForm(myForm.value)\">\r\n            <div class=\"form-group\">\r\n              <label for=\"user\">姓名</label>\r\n              <input type=\"text\" class=\"form-control\" id=\"user\" name=\"user\"  formControlName=\"username\">\r\n              <div [hidden]=\"formModel.get('username').valid || formModel.get('username').untouched\"> <!---untouched  用户失去焦点的时候进行校验--->\r\n                  <p class=\"text-danger\" [hidden]=\"!formModel.hasError('required','username')\">*用户名称不能为空</p>\r\n                  <p class=\"text-danger\" [hidden]=\"!formModel.hasError('maxlength','username')\">*用户名称最大为3位</p>\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group\">\r\n              <label for=\"age\">年龄</label>\r\n              <input type=\"text\" class=\"form-control\" id=\"age\"  name=\"age\" formControlName=\"age\">\r\n              <div [hidden]=\"formModel.get('age').valid || formModel.get('age').pristine\"><!--pristine  用户输入的时候进行校验--->\r\n                  <p class=\"text-danger\" [hidden]=\"!formModel.hasError('required','age')\">*年龄不能为空</p>\r\n                  <p class=\"text-danger\" [hidden]=\"!formModel.hasError('pattern','age')\">*年龄必须是2位数字,并且大于0</p>\r\n              </div>\r\n            </div>\r\n            <div class=\"form-group\">\r\n              <label for=\"phone\">手机号</label>\r\n              <input type=\"text\" class=\"form-control\" id=\"phone\" name=\"phone\" formControlName=\"phone\">\r\n              <div [hidden]=\"formModel.get('phone').valid || formModel.get('phone').pristine\">\r\n                  <p class=\"text-danger\" [hidden]=\"!formModel.hasError('required','phone')\">*手机号码不能为空</p>\r\n                  <p class=\"text-danger\" [hidden]=\"!formModel.hasError('mobile','phone')\">*手机号码格式不正确</p>\r\n              </div>\r\n            </div>\r\n            <div formGroupName=\"passwordsGroup\">\r\n                <div class=\"form-group\">\r\n                    <label for=\"passPwdFirst\">密码</label>\r\n                    <input type=\"text\" class=\"form-control\" id=\"passPwdFirst\" name=\"passWordOne\" formControlName=\"password\">\r\n                    <p class=\"text-danger\" [hidden]=\"!formModel.hasError('minlength',['passwordsGroup','password'])\">\r\n                      *密码最小长度为6位\r\n                    </p>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <label for=\"passPwdSecond\">确认密码</label>\r\n                    <input type=\"text\" class=\"form-control\" id=\"passPwdSecond\" name=\"passWordTwo\" formControlName=\"confirmPassword\">\r\n                    <p class=\"text-danger\" [hidden]=\"!formModel.hasError('equal','passwordsGroup')\">\r\n                      {{ formModel.getError('equal','passwordsGroup')?.pdesc }}\r\n                    </p>\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group\">\r\n              <button type=\"submit\" class=\"btn btn-danger\">提交</button>\r\n            </div>\r\n          </form>\r\n        </div>\r\n      </div>\r\n      <div class=\"alert alert-info\">\r\n        <p>{{ myForm.value | json}}</p>\r\n        <p>{{ subFormData | json}}</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/pageForm/validatorform/validatorform.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/pageForm/validatorform/validatorform.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: ValidatorformComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ValidatorformComponent", function() { return ValidatorformComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _valid_validator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../valid/validator */ "./src/app/pageForm/valid/validator.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ValidatorformComponent = /** @class */ (function () {
+    function ValidatorformComponent(fb) {
+        //设置表单的初始化值
+        this.formModel = fb.group({
+            username: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].maxLength(3)]],
+            age: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].pattern('^[1-9]{1,2}$')]],
+            phone: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required, Object(_valid_validator__WEBPACK_IMPORTED_MODULE_2__["mobileValidator"])()]],
+            passwordsGroup: fb.group({
+                password: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].minLength(6)],
+                confirmPassword: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].minLength(6)]
+            }, { validator: _valid_validator__WEBPACK_IMPORTED_MODULE_2__["equalValidator"] })
+        });
+    }
+    //提交表单 subForm
+    ValidatorformComponent.prototype.subForm = function (val) {
+        if (this.formModel.valid) {
+            this.subFormData = val;
+            console.log(this.formModel.value);
+        }
+        else {
+            this.subFormData = '还有验证未通过';
+        }
+    };
+    ValidatorformComponent.prototype.ngOnInit = function () { };
+    ValidatorformComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-validatorform',
+            template: __webpack_require__(/*! ./validatorform.component.html */ "./src/app/pageForm/validatorform/validatorform.component.html"),
+            styles: [__webpack_require__(/*! ./validatorform.component.css */ "./src/app/pageForm/validatorform/validatorform.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]])
+    ], ValidatorformComponent);
+    return ValidatorformComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pageService/httprequest/httprequest.component.css":
+/*!*******************************************************************!*\
+  !*** ./src/app/pageService/httprequest/httprequest.component.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "span{margin-right:24px;}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/pageService/httprequest/httprequest.component.html":
+/*!********************************************************************!*\
+  !*** ./src/app/pageService/httprequest/httprequest.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n    <div class=\"panel panel-primary\">\r\n        <div class=\"panel-heading\">GET请求方式</div>\r\n        <div class=\"panel-body\">\r\n            <h4 class=\"text-danger\">收到的数据</h4>\r\n            <ul class=\"list-group\">\r\n                <li class=\"list-group-item\"  *ngFor=\"let item of priviceList;index as i\"  >\r\n                    <span class=\"text-danger\">{{i+1}}</span>\r\n                    <span class=\"text-success\">{{item.name}}</span>\r\n                    <span class=\"text-warning\">{{item.age}}</span>\r\n                    <span class=\"text-danger\">{{item.address}}</span>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <!--POST请求方式-->\r\n    <div class=\"panel panel-primary\">\r\n        <div class=\"panel-heading\">POST请求方式</div>\r\n        <div class=\"panel-body\">\r\n            <h4 class=\"text-danger\"> <button type=\"button\" class=\"btn btn-primary\" (click)=\"acceptPost()\">点击获取数据</button></h4>\r\n            <ul class=\"list-group\">\r\n              <li class=\"list-group-item\" *ngFor=\"let item of postList;index as i\">\r\n                  <span class=\"text-danger\">{{i+1}}</span>\r\n                  <span class=\"text-success\">{{item.name}}</span>\r\n                  <span class=\"text-warning\">{{item.age}}</span>\r\n                  <span class=\"text-danger\">{{item.address}}</span>\r\n              </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/pageService/httprequest/httprequest.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/pageService/httprequest/httprequest.component.ts ***!
+  \******************************************************************/
+/*! exports provided: HttprequestComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttprequestComponent", function() { return HttprequestComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var HttprequestComponent = /** @class */ (function () {
+    function HttprequestComponent(http) {
+        var _this = this;
+        this.http = http;
+        this.priviceList = [];
+        this.postList = [];
+        this.jsonpList = [];
+        //get请求
+        this.http.get('./assets/fake/data.json').subscribe(function (data) {
+            _this.priviceList = data;
+        }, function (err) {
+            console.log("\u8BF7\u6C42\u53D1\u751F\u9519\u8BEF\uFF0C\u9519\u8BEF\u7801:" + err.status);
+        });
+    }
+    //post请求------
+    HttprequestComponent.prototype.acceptPost = function () {
+        var _this = this;
+        this.http.post('/arealist', JSON.stringify({
+            timeStart: "2018-10-05 00:00:00",
+            timeEnd: "2018-10-30 23:59:59"
+        }), { headers: { 'Content-Type': 'application/json' }
+        }).subscribe(function (data) {
+            _this.postList = data['list'];
+            console.log(_this.postList);
+        }, function (err) {
+            console.log("\u8BF7\u6C42\u53D1\u751F\u9519\u8BEF\uFF0C\u9519\u8BEF\u7801:" + err.status);
+        });
+    };
+    HttprequestComponent.prototype.ngOnInit = function () { };
+    HttprequestComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-httprequest',
+            template: __webpack_require__(/*! ./httprequest.component.html */ "./src/app/pageService/httprequest/httprequest.component.html"),
+            styles: [__webpack_require__(/*! ./httprequest.component.css */ "./src/app/pageService/httprequest/httprequest.component.css")],
+            providers: []
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], HttprequestComponent);
+    return HttprequestComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pageService/pushlist/pushlist.component.css":
+/*!*************************************************************!*\
+  !*** ./src/app/pageService/pushlist/pushlist.component.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".top-dis{\r\n  margin-top:15px;\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/pageService/pushlist/pushlist.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/pageService/pushlist/pushlist.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n    <div class=\"panel panel-primary\">\r\n        <div class=\"panel-heading\">服务列表添加</div>\r\n        <div class=\"panel-body\">\r\n            <div class=\"btn-group\">\r\n                <button type=\"button\" (click)=\"addElement()\" class=\"btn btn-primary\">添加元素</button>\r\n                <button type=\"button\" (click)=\"removeElement()\" class=\"btn btn-danger\">移除元素</button>\r\n            </div>\r\n            <div class=\"top-dis\">\r\n                <ul class=\"list-group\">\r\n                    <li class=\"list-group-item\" *ngFor=\"let item of list\">{{item}}</li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/pageService/pushlist/pushlist.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/pageService/pushlist/pushlist.component.ts ***!
+  \************************************************************/
+/*! exports provided: PushlistComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PushlistComponent", function() { return PushlistComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _service_addlist_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../service/addlist.service */ "./src/app/pageService/service/addlist.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var PushlistComponent = /** @class */ (function () {
+    //依赖注入数组操作服务器
+    function PushlistComponent(addListArray) {
+        this.addListArray = addListArray;
+        this.list = [];
+        this.list = this.addListArray.list;
+    }
+    //添加元素
+    PushlistComponent.prototype.addElement = function () {
+        var num = parseInt((Math.random() * 100).toString());
+        this.addListArray.addElement(num);
+    };
+    //移除元素
+    PushlistComponent.prototype.removeElement = function () {
+        this.addListArray.removeElement();
+    };
+    PushlistComponent.prototype.ngOnInit = function () { };
+    PushlistComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-pushlist',
+            template: __webpack_require__(/*! ./pushlist.component.html */ "./src/app/pageService/pushlist/pushlist.component.html"),
+            styles: [__webpack_require__(/*! ./pushlist.component.css */ "./src/app/pageService/pushlist/pushlist.component.css")],
+            providers: [_service_addlist_service__WEBPACK_IMPORTED_MODULE_1__["AddlistService"]]
+        }),
+        __metadata("design:paramtypes", [_service_addlist_service__WEBPACK_IMPORTED_MODULE_1__["AddlistService"]])
+    ], PushlistComponent);
+    return PushlistComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pageService/rxjsmodel/rxjsmodel.component.css":
+/*!***************************************************************!*\
+  !*** ./src/app/pageService/rxjsmodel/rxjsmodel.component.css ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".top-gap{margin-top:15px;}\r\nstrong{font-size:20px;}\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/pageService/rxjsmodel/rxjsmodel.component.html":
+/*!****************************************************************!*\
+  !*** ./src/app/pageService/rxjsmodel/rxjsmodel.component.html ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"panel panel-primary\">\n    <div class=\"panel-heading\">RXJS事件处理</div>\n    <div class=\"panel-body\">\n        <div class=\"btn-group\">\n            <button class=\"btn btn-primary\" id=\"btn-list-one\">原生事件</button>\n            <button class=\"btn btn-danger\" id=\"btn-list-two\">Observable</button>\n        </div>\n        <div class=\"top-gap\">\n            <strong id=\"text\" class=\"text-danger\">init text</strong>\n        </div>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/pageService/rxjsmodel/rxjsmodel.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/pageService/rxjsmodel/rxjsmodel.component.ts ***!
+  \**************************************************************/
+/*! exports provided: RxjsmodelComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RxjsmodelComponent", function() { return RxjsmodelComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var RxjsmodelComponent = /** @class */ (function () {
+    function RxjsmodelComponent() {
+    }
+    RxjsmodelComponent.prototype.ngOnInit = function () {
+        var oBtnListOne = document.querySelector('#btn-list-one');
+        var oBtnListTwo = document.querySelector('#btn-list-two');
+        var oText = document.getElementById('text');
+        //原生事件点击
+        oBtnListOne.addEventListener('click', function () {
+            oText.innerHTML = 'Hello World OriginEvent';
+        });
+        //Observable响应事件 订阅模式
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["fromEvent"])(oBtnListTwo, 'click').subscribe(function () {
+            oText.innerHTML = 'I am Observable';
+        });
+    };
+    RxjsmodelComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-rxjsmodel',
+            template: __webpack_require__(/*! ./rxjsmodel.component.html */ "./src/app/pageService/rxjsmodel/rxjsmodel.component.html"),
+            styles: [__webpack_require__(/*! ./rxjsmodel.component.css */ "./src/app/pageService/rxjsmodel/rxjsmodel.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], RxjsmodelComponent);
+    return RxjsmodelComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pageService/service/addlist.service.ts":
+/*!********************************************************!*\
+  !*** ./src/app/pageService/service/addlist.service.ts ***!
+  \********************************************************/
+/*! exports provided: AddlistService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddlistService", function() { return AddlistService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AddlistService = /** @class */ (function () {
+    function AddlistService() {
+        //定义一个列表
+        this.list = [34, 55];
+    }
+    //添加元素的方法
+    AddlistService.prototype.addElement = function (str) {
+        this.list.push(str);
+        return this.list;
+    };
+    //移除数组元素的方法
+    AddlistService.prototype.removeElement = function () {
+        this.list.pop();
+        return this.list;
+    };
+    AddlistService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [])
+    ], AddlistService);
+    return AddlistService;
 }());
 
 

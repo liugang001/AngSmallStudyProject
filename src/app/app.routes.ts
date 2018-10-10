@@ -28,6 +28,7 @@ import {ValidatorformComponent} from './pageForm/validatorform/validatorform.com
 import {PushlistComponent} from './pageService/pushlist/pushlist.component';
 import {HttprequestComponent} from './pageService/httprequest/httprequest.component';
 import {RxjsmodelComponent} from './pageService/rxjsmodel/rxjsmodel.component';
+import {RatesModule} from './componentPage/rates/rates.module';
 
 
 
@@ -50,7 +51,8 @@ const appRoutes:Routes=[
       {path:"pushList",component:PushlistComponent},//共享服务列表
       {path:"requestWay",component:HttprequestComponent},//请求方式
       {path:"rxjsModel",component:RxjsmodelComponent},//Rxjs
-      {path:"",loadChildren:"./componentPage/lazymodule/lazymodule.module#LazymoduleModule"}
+      {path:"",loadChildren:"./componentPage/lazymodule/lazymodule.module#LazymoduleModule"},
+      {path:"",loadChildren:"./componentPage/rates/rates.module#RatesModule"}
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

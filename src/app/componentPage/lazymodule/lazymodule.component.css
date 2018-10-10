@@ -1,0 +1,11 @@
+/*自定义样式*/
+.alert-md-color {
+  background-color: #7B1FA2;
+  border-color: #4A148C;
+  color: #fff;
+}
+.alert-gang-color {
+  background-color: deeppink;
+  border-color: pink;
+  color: #fff;
+}

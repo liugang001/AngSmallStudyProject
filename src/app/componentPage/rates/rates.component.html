@@ -1,3 +1,15 @@
-<p>
- 'rating'
-</p>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Rates只读模式</div>
+        <div class="panel-body">
+            <!--星星打分组件-->
+            <rating (onHover)="hoveringOver($event)"  [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating>
+            <p class="text top-gap"><strong class="text-primary">当前星星被选中的个数:{{rate}}</strong></p>
+            <p class="text top-gap"><strong class="text-danger">当前显示分数:{{percent}}</strong></p>
+            <p class="top-gap">
+                <button type="button"  (click)="switchReadOnly()" class="btn" [ngClass]="{'btn-primary':!isReadonly,'btn-danger':isReadonly}">{{isReadonly?'关闭':'开启'}}只读模式</button>
+                <button type="button"  (click)="resetInit()"      class="btn btn-success">重置</button>
+            </p>
+        </div>
+    </div>
+</div>

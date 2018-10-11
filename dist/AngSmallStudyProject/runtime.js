@@ -61,7 +61,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"componentPage-lazymodule-lazymodule-module":"componentPage-lazymodule-lazymodule-module"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"componentPage-lazymodule-lazymodule-module~componentPage-rates-rates-module":"componentPage-lazymodule-lazymodule-module~componentPage-rates-rates-module","componentPage-lazymodule-lazymodule-module":"componentPage-lazymodule-lazymodule-module","componentPage-rates-rates-module":"componentPage-rates-rates-module"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function

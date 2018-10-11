@@ -4,8 +4,12 @@
       "name":"组件",
       "arrList":[
         {
-          "name":"组件模型",
+          "name":"Alert组件",
           "link":"./lazycomponent"
+        },
+        {
+          "name":"Rating组件",
+          "link":"./rates"
         }
       ]
     },

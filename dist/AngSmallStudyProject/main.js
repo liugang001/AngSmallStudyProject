@@ -10,7 +10,13 @@
 var map = {
 	"./componentPage/lazymodule/lazymodule.module": [
 		"./src/app/componentPage/lazymodule/lazymodule.module.ts",
+		"componentPage-lazymodule-lazymodule-module~componentPage-rates-rates-module",
 		"componentPage-lazymodule-lazymodule-module"
+	],
+	"./componentPage/rates/rates.module": [
+		"./src/app/componentPage/rates/rates.module.ts",
+		"componentPage-lazymodule-lazymodule-module~componentPage-rates-rates-module",
+		"componentPage-rates-rates-module"
 	]
 };
 function webpackAsyncContext(req) {
@@ -22,7 +28,7 @@ function webpackAsyncContext(req) {
 			throw e;
 		});
 	}
-	return __webpack_require__.e(ids[1]).then(function() {
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
 		var module = __webpack_require__(ids[0]);
 		return module;
 	});
@@ -322,7 +328,8 @@ var appRoutes = [
             { path: "pushList", component: _pageService_pushlist_pushlist_component__WEBPACK_IMPORTED_MODULE_17__["PushlistComponent"] },
             { path: "requestWay", component: _pageService_httprequest_httprequest_component__WEBPACK_IMPORTED_MODULE_18__["HttprequestComponent"] },
             { path: "rxjsModel", component: _pageService_rxjsmodel_rxjsmodel_component__WEBPACK_IMPORTED_MODULE_19__["RxjsmodelComponent"] },
-            { path: "", loadChildren: "./componentPage/lazymodule/lazymodule.module#LazymoduleModule" }
+            { path: "", loadChildren: "./componentPage/lazymodule/lazymodule.module#LazymoduleModule" },
+            { path: "", loadChildren: "./componentPage/rates/rates.module#RatesModule" }
         ] },
     { path: "", redirectTo: "/login", pathMatch: "full" },
     { path: "**", component: _common_error_error_component__WEBPACK_IMPORTED_MODULE_3__["ErrorComponent"] }

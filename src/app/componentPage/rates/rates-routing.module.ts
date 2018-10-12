@@ -1,7 +1,7 @@
 import {RatesComponent} from './rates.component';
 
 export const RatesRoutes = [{
-  path:"rates",
+  path:"",
   component:RatesComponent
 }];
 

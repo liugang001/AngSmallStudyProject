@@ -10,6 +10,10 @@
         {
           "name":"Rating组件",
           "link":"./rates"
+        },
+        {
+          "name":"组件传值",
+          "link":"./sendValue"
         }
       ]
     },

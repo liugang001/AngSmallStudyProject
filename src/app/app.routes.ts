@@ -29,6 +29,7 @@ import {PushlistComponent} from './pageService/pushlist/pushlist.component';
 import {HttprequestComponent} from './pageService/httprequest/httprequest.component';
 import {RxjsmodelComponent} from './pageService/rxjsmodel/rxjsmodel.component';
 import {RatesModule} from './componentPage/rates/rates.module';
+import {SendvalueModule} from './componentPage/sendvalue/sendvalue.module';
 
 
 
@@ -51,8 +52,9 @@ const appRoutes:Routes=[
       {path:"pushList",component:PushlistComponent},//共享服务列表
       {path:"requestWay",component:HttprequestComponent},//请求方式
       {path:"rxjsModel",component:RxjsmodelComponent},//Rxjs
-      {path:"",loadChildren:"./componentPage/lazymodule/lazymodule.module#LazymoduleModule"},
-      {path:"",loadChildren:"./componentPage/rates/rates.module#RatesModule"}
+      {path:"lazycomponent",loadChildren:"./componentPage/lazymodule/lazymodule.module#LazymoduleModule"},//Alert懒加载原理
+      {path:"rates",loadChildren:"./componentPage/rates/rates.module#RatesModule"},//星星评分
+      {path:"sendValue",loadChildren:"./componentPage/sendvalue/sendvalue.module#SendvalueModule"}//组件传值操作
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

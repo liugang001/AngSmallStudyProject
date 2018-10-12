@@ -5,7 +5,6 @@ import {RouterModule} from '@angular/router';
 import { RatesRoutes } from './rates-routing.module';
 import { RatesComponent } from './rates.component';
 import {FormsModule} from '@angular/forms';
-import {RouterModule} from '@angular/router';
 
 @NgModule({
   imports: [
@@ -16,4 +15,4 @@ import {RouterModule} from '@angular/router';
   ],
   declarations: [RatesComponent]
 })
-export class RatesModule { }
+export class RatesModule {}

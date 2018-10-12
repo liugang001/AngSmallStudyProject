@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">父组件向组件传值</div>
+    <div class="panel-body">
+        <app-sonvalue [value]="parentValue" [total]="totalValue" (myValueEvent)="acceptValue($event)"></app-sonvalue>
+    </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading">父组件向组件传值</div>
+    <div class="panel-body">
+        <p>我接收到子组件传递过来的值：<strong class="text-success">{{acceptFromSon | json}}</strong></p>
+    </div>
+  </div>
+</div>

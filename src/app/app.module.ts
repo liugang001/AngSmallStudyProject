@@ -52,7 +52,9 @@ import { RoutemainComponent } from './routemain/routemain.component';
 import { ContentComponent } from './content/content.component';
 import { TitleTextComponent } from './content/title-text/title-text.component';
 import { LayuiComponent } from './layui/layui.component';
-import {ChildComponent} from './child/child.component';
+import {ChildComponent} from "./child/child.component";
+
+
 
 
 

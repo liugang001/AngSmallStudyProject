@@ -30,6 +30,8 @@ import {HttprequestComponent} from './pageService/httprequest/httprequest.compon
 import {RxjsmodelComponent} from './pageService/rxjsmodel/rxjsmodel.component';
 import {RatesModule} from './componentPage/rates/rates.module';
 import {SendvalueModule} from './componentPage/sendvalue/sendvalue.module';
+import {SmStructModule} from './componentPage/sm-struct/sm-struct.module';
+import {PipeDemoModule} from './template/pipe-demo/pipe-demo.module';
 
 
 
@@ -54,7 +56,9 @@ const appRoutes:Routes=[
       {path:"rxjsModel",component:RxjsmodelComponent},//Rxjs
       {path:"lazycomponent",loadChildren:"./componentPage/lazymodule/lazymodule.module#LazymoduleModule"},//Alert懒加载原理
       {path:"rates",loadChildren:"./componentPage/rates/rates.module#RatesModule"},//星星评分
-      {path:"sendValue",loadChildren:"./componentPage/sendvalue/sendvalue.module#SendvalueModule"}//组件传值操作
+      {path:"sendValue",loadChildren:"./componentPage/sendvalue/sendvalue.module#SendvalueModule"},//组件传值操作
+      {path:"smStruct",loadChildren:"./componentPage/sm-struct/sm-struct.module#SmStructModule"},//组件简单的布局
+      {path:"pipeDemo",loadChildren:"./template/pipe-demo/pipe-demo.module#PipeDemoModule"}//管道模板
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

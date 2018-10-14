@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {HttpClientJsonpModule} from '@angular/common/http';
+
 
 
 @Component({
@@ -13,7 +13,7 @@ export class HttprequestComponent implements OnInit {
 
   private priviceList:any=[];
   private postList:any=[];
-  private jsonpList:any=[];
+
 
   constructor(private http:HttpClient) {
       //get请求

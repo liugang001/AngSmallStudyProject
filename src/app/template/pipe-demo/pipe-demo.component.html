@@ -1,0 +1,40 @@
+<div class="container">
+  <!--内置管道-->
+  <div class="panel panel-primary">
+    <div class="panel-heading">内置管道</div>
+    <div class="panel-body">
+        <p class="alert alert-warning"><strong>{{timeDes | date:"yyyy-MM-dd HH:mm:ss"}}</strong></p>
+        <p class="alert alert-danger"><strong>{{myNumber | number:"1.2-2"}}</strong></p>
+        <p class="alert alert-success"><strong>{{mySmEngLish | uppercase}}</strong></p>
+        <p class="alert alert-danger"><strong>{{myBgEnglish | lowercase}}</strong></p>
+        <p class="alert alert-warning"><strong>{{HellowParking | slice:1:9}}</strong></p>
+        <p class="alert alert-success"><strong>{{Project | json}}</strong></p>
+    </div>
+  </div>
+  <!--自定义管道-->
+  <div class="panel panel-danger">
+      <div class="panel-heading">自定义管道</div>
+      <div class="panel-body">
+          <div class="table-responsive">
+              <table class="table table-bordered table-hover table-striped">
+                  <thead>
+                      <tr>
+                        <th class="text-center">序号</th>
+                        <th class="text-center">姓名</th>
+                        <th class="text-center">电话号码</th>
+                        <th class="text-center">支付方式</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="text-center" *ngFor="let item of myTableList;index as i">
+                          <td>{{i+1}}</td>
+                          <td>{{item.name}}</td>
+                          <td><strong class="text-danger">{{item.phone | phone}}</strong></td>
+                          <td><strong class="text-primary">{{item.applyWay | applyWay}}</strong></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</div>

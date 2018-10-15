@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular脏检查机制</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body ng-app="app"  ng-cloak>
+    <div class="container top-dis" ng-controller="myCtrl">
+        <div class="panel panel-primary">
+            <div class="panel-heading">事件变化</div>
+            <div class="panel-body">
+              <div class="top-dis">
+                  <button type="button" class="btn btn-warning" myclick>指令事件</button>
+              </div>
+              <div class="top-dis">
+                  <div class="alert alert-danger"><strong class="text-size">{{counter}}</strong></div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../js/angular.min.js"></script>
+<script>
+    /*
+    * Angular实现了双向数据绑定。无非就是界面的操作能实事反应到数据，数据的更改也能在界面呈现， 而数据到界面的呈现则是由脏检查来做
+    * 用户的哪些行为会触发脏检查机制？
+    * UI 事件 等回调操作
+    * ajax请求
+    * timeout(setInterval/setTimeout)
+    * */
+    var app=angular.module('app',[]);
+    //指令式驱动  无法触发脏检查机制------------
+    app.directive('myclick', function() {
+        return function($scope, element, attr) {
+            element.on('click', function() {
+                $scope.counter++;
+                $scope.$apply();
+                console.log($scope.counter)
+            })
+        }
+    })
+    app.controller("myCtrl",function($scope,$interval){
+      $scope.counter=0;
+    });
+
+</script>

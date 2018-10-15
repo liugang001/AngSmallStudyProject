@@ -29,10 +29,7 @@ export class SonvalueComponent implements OnInit {
           this.index++;
       },600)
   }
-
   constructor() {}
-
-
   ngOnInit() {}
 
 }

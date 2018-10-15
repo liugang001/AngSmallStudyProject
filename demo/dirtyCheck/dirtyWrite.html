@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular脏检查机制</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container top-dis">
+        <div class="panel panel-primary">
+            <div class="panel-heading">简单事件绑定实现</div>
+            <div class="panel-body">
+                  <div class="alert alert-info">
+                      <button type="button" class="btn btn-primary" ng-click="increase">increase</button>
+                      <button type="button" class="btn btn-danger" ng-click="decrease">decrease</button>
+                  </div>
+                  <div class="alert alert-success">
+                     <strong ng-bind="data" class="text-size"></strong>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+  (function(){
+      //创建模型的增减对象-------------
+      var scope={
+          increase:function(){
+              this.data++;
+          },
+          decrease:function(){
+              this.data--;
+          },
+          data:0,
+      }
+
+     //数据绑定函数-----------------
+    function bind() {
+        var list = document.querySelectorAll('[ng-click]');
+        for (var i = 0;i < list.length;i++) {
+            (function(_index){
+                list[_index].onclick=function(){
+                    var func = this.getAttribute('ng-click');
+                    scope[func]();
+                    apply();
+                }
+            })(i)
+        }
+    }
+
+      //数据模型创建------------
+      function apply() {
+          var list = document.querySelectorAll('[ng-bind]');
+          for (var i = 0, l = list.length; i < l; i++) {
+              var bindData = list[i].getAttribute('ng-bind');
+              list[i].innerHTML = scope[bindData];
+          }
+      }
+
+      bind();
+      apply();
+  })()
+
+</script>

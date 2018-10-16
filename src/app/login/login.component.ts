@@ -10,7 +10,7 @@ export class LoginComponent implements OnInit {
 
   listArr:any[]=[
      {name:"组件",link:"../routemain/lazycomponent"},
-     {name:"演示区二",link:"../routemain/home"},
+     {name:"路由",link:"../routemain/gotoRoute"},
      {name:"模板",link:"../routemain/pipeDemo"},
      {name:"指令",link:"../routemain/home"},
      {name:"依赖注入",link:"../routemain/home"},

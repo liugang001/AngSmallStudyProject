@@ -20,7 +20,15 @@
         }
       ]
     },
-    {"arrList":[]},
+    {
+      "name":"路由",
+      "arrList":[
+        {
+            "name":"路由跳转",
+            "link":"./gotoRoute"
+        }
+      ]
+    },
     {
       "name":"模板",
       "arrList":[

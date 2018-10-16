@@ -22,9 +22,5 @@ export class FruitService {
   public getOtherText(name){
       return this.LogtextService.log(name);
   }
-
-
-  constructor(private LogtextService:LogtextService) {
-
-  }
+  constructor(private LogtextService:LogtextService){}
 }

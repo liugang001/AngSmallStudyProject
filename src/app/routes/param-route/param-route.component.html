@@ -1,0 +1,14 @@
+<div class="container">
+  <!--内置管道-->
+  <div class="panel panel-primary">
+    <div class="panel-heading">路由跳转效果</div>
+    <div class="panel-body">
+        <div class="top-dis">
+          <button type="button"  [routerLink]="['./tableList']" class="btn btn-primary">列表页面</button>
+        </div>
+        <div class="box">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+  </div>
+</div>

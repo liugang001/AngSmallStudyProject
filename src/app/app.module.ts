@@ -11,7 +11,6 @@ import {ElModule} from 'element-angular/release/element-angular.module';
 
 
 
-
 //指令模块
 import {MyColorDirective} from './pageDire/myDire/my-color.directive';
 import {ColorEventDirective} from './pageDire/myDire/color-event.directive';

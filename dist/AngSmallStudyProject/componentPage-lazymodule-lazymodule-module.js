@@ -23,7 +23,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 var routes = [{
-        path: "lazycomponent",
+        path: "",
         component: _lazymodule_component__WEBPACK_IMPORTED_MODULE_2__["LazymoduleComponent"]
     }];
 var LazymoduleRoutingModule = /** @class */ (function () {

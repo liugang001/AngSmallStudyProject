@@ -10,11 +10,38 @@
         {
           "name":"Rating组件",
           "link":"./rates"
+        },
+        {
+          "name":"组件传值",
+          "link":"./sendValue"
+        },{
+          "name":"组件布局",
+          "link":"./smStruct"
         }
       ]
     },
-    {"arrList":[]},
-    {"arrList":[]},
+    {
+      "name":"路由",
+      "arrList":[
+        {
+            "name":"路由跳转",
+            "link":"./gotoRoute"
+        },
+        {
+           "name":"路由守卫",
+           "link":"./defendRoute"
+        }
+      ]
+    },
+    {
+      "name":"模板",
+      "arrList":[
+          {
+              "name":"管道",
+              "link":"./pipeDemo"
+          }
+      ]
+    },
     {
       "name":"指令",
       "arrList":[

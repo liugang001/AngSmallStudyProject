@@ -17,6 +17,26 @@ var map = {
 		"./src/app/componentPage/rates/rates.module.ts",
 		"componentPage-lazymodule-lazymodule-module~componentPage-rates-rates-module",
 		"componentPage-rates-rates-module"
+	],
+	"./componentPage/sendvalue/sendvalue.module": [
+		"./src/app/componentPage/sendvalue/sendvalue.module.ts",
+		"componentPage-sendvalue-sendvalue-module"
+	],
+	"./componentPage/sm-struct/sm-struct.module": [
+		"./src/app/componentPage/sm-struct/sm-struct.module.ts",
+		"componentPage-sm-struct-sm-struct-module"
+	],
+	"./routes/defend-route/defend-route.module": [
+		"./src/app/routes/defend-route/defend-route.module.ts",
+		"routes-defend-route-defend-route-module"
+	],
+	"./routes/param-route/param-route.module": [
+		"./src/app/routes/param-route/param-route.module.ts",
+		"routes-param-route-param-route-module"
+	],
+	"./template/pipe-demo/pipe-demo.module": [
+		"./src/app/template/pipe-demo/pipe-demo.module.ts",
+		"template-pipe-demo-pipe-demo-module"
 	]
 };
 function webpackAsyncContext(req) {
@@ -209,6 +229,7 @@ var AppModule = /** @class */ (function () {
                 _home_home_component__WEBPACK_IMPORTED_MODULE_28__["HomeComponent"],
                 _login_login_component__WEBPACK_IMPORTED_MODULE_32__["LoginComponent"],
                 _common_error_error_component__WEBPACK_IMPORTED_MODULE_29__["ErrorComponent"],
+                _child_child_component__WEBPACK_IMPORTED_MODULE_37__["ChildComponent"],
                 _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_30__["FilterPipe"],
                 _pipe_getdate_pipe__WEBPACK_IMPORTED_MODULE_31__["GetdatePipe"],
                 _routemain_routemain_component__WEBPACK_IMPORTED_MODULE_33__["RoutemainComponent"],
@@ -328,8 +349,13 @@ var appRoutes = [
             { path: "pushList", component: _pageService_pushlist_pushlist_component__WEBPACK_IMPORTED_MODULE_17__["PushlistComponent"] },
             { path: "requestWay", component: _pageService_httprequest_httprequest_component__WEBPACK_IMPORTED_MODULE_18__["HttprequestComponent"] },
             { path: "rxjsModel", component: _pageService_rxjsmodel_rxjsmodel_component__WEBPACK_IMPORTED_MODULE_19__["RxjsmodelComponent"] },
-            { path: "", loadChildren: "./componentPage/lazymodule/lazymodule.module#LazymoduleModule" },
-            { path: "", loadChildren: "./componentPage/rates/rates.module#RatesModule" }
+            { path: "lazycomponent", loadChildren: "./componentPage/lazymodule/lazymodule.module#LazymoduleModule" },
+            { path: "rates", loadChildren: "./componentPage/rates/rates.module#RatesModule" },
+            { path: "sendValue", loadChildren: "./componentPage/sendvalue/sendvalue.module#SendvalueModule" },
+            { path: "smStruct", loadChildren: "./componentPage/sm-struct/sm-struct.module#SmStructModule" },
+            { path: "pipeDemo", loadChildren: "./template/pipe-demo/pipe-demo.module#PipeDemoModule" },
+            { path: "gotoRoute", loadChildren: "./routes/param-route/param-route.module#ParamRouteModule" },
+            { path: "defendRoute", loadChildren: "./routes/defend-route/defend-route.module#DefendRouteModule" } //路由守卫加载
         ] },
     { path: "", redirectTo: "/login", pathMatch: "full" },
     { path: "**", component: _common_error_error_component__WEBPACK_IMPORTED_MODULE_3__["ErrorComponent"] }
@@ -905,8 +931,8 @@ var LoginComponent = /** @class */ (function () {
         this.route = route;
         this.listArr = [
             { name: "组件", link: "../routemain/lazycomponent" },
-            { name: "演示区二", link: "../routemain/home" },
-            { name: "演示区三", link: "../routemain/home" },
+            { name: "路由", link: "../routemain/gotoRoute" },
+            { name: "模板", link: "../routemain/pipeDemo" },
             { name: "指令", link: "../routemain/home" },
             { name: "依赖注入", link: "../routemain/home" },
             { name: "表单", link: "../routemain/templateform" },
@@ -951,7 +977,7 @@ module.exports = ".navbar{margin-bottom:10px;}\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse\">\r\n  <div class=\"container\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\"\r\n              aria-expanded=\"false\" aria-controls=\"navbar\">\r\n        <span class=\"sr-only\">Toggle navigation</span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n      </button>\r\n      <a class=\"navbar-brand\" href=\"#\">AngularSalllProject</a>\r\n    </div>\r\n    <div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n      <ul class=\"nav navbar-nav navbar-left\">\r\n        <li routerLinkActive=\"active\" *ngFor=\"let item of routeList;index as i\"><a [routerLink]=\"[item.link]\">{{item.name}}</a></li>\r\n        <!--<li routerLinkActive=\"active\"><a [routerLink]=\"['./home']\">Home</a></li>\r\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['./image']\">Images</a></li>\r\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['./text']\">Texts</a></li>\r\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['./ngContent',numStart,numEnd]\">ngContent</a></li>\r\n        <li routerLinkActive=\"active\"><a [routerLink]=\"['./layui']\" [queryParams]=\"{id:34,ts:23}\">layui</a></li>-->\r\n      </ul>\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li><a href=\"javascript:;\" [routerLink]=\"'../login'\">返回列表</a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar navbar-inverse\">\r\n  <div class=\"container\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\"\r\n              aria-expanded=\"false\" aria-controls=\"navbar\">\r\n        <span class=\"sr-only\">Toggle navigation</span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n      </button>\r\n      <a class=\"navbar-brand\" href=\"#\">AngularSalllProject</a>\r\n    </div>\r\n    <div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n      <ul class=\"nav navbar-nav navbar-left\">\r\n        <li routerLinkActive=\"active\" *ngFor=\"let item of routeList;index as i\"><a [routerLink]=\"[item.link]\">{{item.name}}</a></li>\r\n      </ul>\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li><a href=\"javascript:;\" [routerLink]=\"'../login'\">返回列表</a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -2372,7 +2398,6 @@ var HttprequestComponent = /** @class */ (function () {
         this.http = http;
         this.priviceList = [];
         this.postList = [];
-        this.jsonpList = [];
         //get请求
         this.http.get('./assets/fake/data.json').subscribe(function (data) {
             _this.priviceList = data;

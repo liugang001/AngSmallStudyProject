@@ -33,6 +33,7 @@ import {SendvalueModule} from './componentPage/sendvalue/sendvalue.module';
 import {SmStructModule} from './componentPage/sm-struct/sm-struct.module';
 import {PipeDemoModule} from './template/pipe-demo/pipe-demo.module';
 import {ParamRouteModule} from './routes/param-route/param-route.module';
+import {DefendRouteModule} from './routes/defend-route/defend-route.module';
 
 
 
@@ -60,7 +61,8 @@ const appRoutes:Routes=[
       {path:"sendValue",loadChildren:"./componentPage/sendvalue/sendvalue.module#SendvalueModule"},//组件传值操作
       {path:"smStruct",loadChildren:"./componentPage/sm-struct/sm-struct.module#SmStructModule"},//组件简单的布局
       {path:"pipeDemo",loadChildren:"./template/pipe-demo/pipe-demo.module#PipeDemoModule"},//管道模板
-      {path:"gotoRoute",loadChildren:"./routes/param-route/param-route.module#ParamRouteModule"}//路由参数
+      {path:"gotoRoute",loadChildren:"./routes/param-route/param-route.module#ParamRouteModule"},//路由参数
+      {path:"defendRoute",loadChildren:"./routes/defend-route/defend-route.module#DefendRouteModule"}//路由守卫加载
    ]},
   {path:"",redirectTo:"/login",pathMatch:"full"},
   {path:"**",component:ErrorComponent}

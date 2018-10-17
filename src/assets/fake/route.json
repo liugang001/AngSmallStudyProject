@@ -26,6 +26,10 @@
         {
             "name":"路由跳转",
             "link":"./gotoRoute"
+        },
+        {
+           "name":"路由守卫",
+           "link":"./defendRoute"
         }
       ]
     },

@@ -10,15 +10,23 @@ import {Router,ActivatedRoute} from '@angular/router';
 export class RouteDetailComponent implements OnInit {
 
   private idParam:string;
-  private newParam:string;
-  constructor(private routes:Router,private routerInfo:ActivatedRoute) {
+  private newParam:string='344';
+  constructor(private router:Router,private routerInfo:ActivatedRoute) {
 
   }
 
+  //变化当前路由中的参数值
+  public varyParams(){
+      this.router.navigate(['./routemain/gotoRoute/tableDetail',this.newParam])
+  }
+
   ngOnInit() {
+      //参数快照
       this.idParam=this.routerInfo.snapshot.params['id'];
-      this.newParam=this.routerInfo.snapshot.queryParams['id'];
-      console.log(this.newParam)
+      //参数订阅
+      this.routerInfo.params.subscribe(data=>{
+          this.idParam=data['id'];
+      })
   }
 
 }

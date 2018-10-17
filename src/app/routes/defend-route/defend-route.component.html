@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">路由守卫操作</div>
+    <div class="panel-body">
+      <div class="top-dis">
+         <button class="btn btn-primary" type="button" (click)="setMyCookie()">设置Cookie</button>
+         <button class="btn btn-danger" type="button" (click)="clearMyCookie()">清除Cookie</button>
+         <button class="btn btn-warning" type="button" (click)="gotoRouteByCookie()">跳转到另一个路由</button>
+      </div>
+      <div class="content">
+          <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

@@ -61,7 +61,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"componentPage-lazymodule-lazymodule-module~componentPage-rates-rates-module":"componentPage-lazymodule-lazymodule-module~componentPage-rates-rates-module","componentPage-lazymodule-lazymodule-module":"componentPage-lazymodule-lazymodule-module","componentPage-rates-rates-module":"componentPage-rates-rates-module"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"componentPage-lazymodule-lazymodule-module~componentPage-rates-rates-module":"componentPage-lazymodule-lazymodule-module~componentPage-rates-rates-module","componentPage-lazymodule-lazymodule-module":"componentPage-lazymodule-lazymodule-module","componentPage-rates-rates-module":"componentPage-rates-rates-module","componentPage-sendvalue-sendvalue-module":"componentPage-sendvalue-sendvalue-module","componentPage-sm-struct-sm-struct-module":"componentPage-sm-struct-sm-struct-module","routes-defend-route-defend-route-module":"routes-defend-route-defend-route-module","routes-param-route-param-route-module":"routes-param-route-param-route-module","template-pipe-demo-pipe-demo-module":"template-pipe-demo-pipe-demo-module"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function

@@ -228,13 +228,13 @@ var DefendRouteComponent = /** @class */ (function () {
     //设置cookie
     DefendRouteComponent.prototype.setMyCookie = function () {
         this.cookieService.set("userId", "123456789");
-        console.log("设置cookie userId 成功");
+        alert("设置cookie userId 成功");
     };
     ;
     //清除cookie
     DefendRouteComponent.prototype.clearMyCookie = function () {
         this.cookieService.delete('userId');
-        console.log("删除cookie userId 成功");
+        alert("删除cookie userId 成功");
     };
     //通过cookie判断
     DefendRouteComponent.prototype.gotoRouteByCookie = function () {

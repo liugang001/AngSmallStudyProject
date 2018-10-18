@@ -5,6 +5,7 @@ import {RouterModule} from '@angular/router';
 import {RouteLoginComponent} from './route-login/route-login.component';
 import {RouteMainComponent} from './route-main/route-main.component';
 import {DefendGuard} from '../../service/defend.guard';
+import {LeaveGuard} from '../../service/leave.guard';
 import {CookieService} from 'ngx-cookie-service';
 //路由守卫
 const DefendRoutes=[{
@@ -14,7 +15,8 @@ const DefendRoutes=[{
       {
         path:"routeMain",
         component:RouteMainComponent,
-        canActivate:[DefendGuard]
+        canActivate:[DefendGuard],
+        canDeactivate:[LeaveGuard]
       },
       {
         path:"routeLogin",
@@ -34,6 +36,6 @@ const DefendRoutes=[{
     RouterModule.forChild(DefendRoutes),
   ],
   declarations: [DefendRouteComponent,RouteLoginComponent,RouteMainComponent],
-  providers:[DefendGuard,CookieService]
+  providers:[DefendGuard,LeaveGuard,CookieService]
 })
 export class DefendRouteModule { }

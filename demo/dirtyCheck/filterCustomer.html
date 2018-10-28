@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular脏检查机制</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body ng-app="app"  ng-cloak>
+    <div class="container top-dis" ng-controller="myCtrl">
+        <div class="panel panel-primary">
+            <div class="panel-heading">事件变化</div>
+            <div class="panel-body">
+              <div class="top-dis">
+                  <button type="button" class="btn btn-warning">指令事件</button>
+              </div>
+              <div class="top-dis">
+                  <div class="alert alert-danger"><strong class="text-size">{{counter | listGang:23}}</strong></div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../js/angular.min.js"></script>
+<script>
+    /*
+    *自定义过滤器
+    * */
+    var app=angular.module('app',[]);
+    app.controller("myCtrl",function($scope){
+        $scope.counter=10
+    })
+    app.filter("listGang",function(){
+        return function(oInput,value){
+            return oInput+value;
+        }
+    })
+</script>

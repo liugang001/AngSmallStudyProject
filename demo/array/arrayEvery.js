@@ -30,3 +30,14 @@ function isSomeRed(arr){
   return arr.some(item=>item.color=='red')
 }
 console.log(isSomeRed(fruits));
+
+
+
+let a=[34,55,66,55,67]
+let b=[55,66,77,34,55]
+let s=new Set(b);
+let aResult=a.filter(item=>!s.has(item))
+let bResult=a.filter(item=>s.has(item))
+console.log(aResult)
+console.log(bResult)
+

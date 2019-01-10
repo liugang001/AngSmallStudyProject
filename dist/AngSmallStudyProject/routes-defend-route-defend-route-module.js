@@ -279,13 +279,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _route_login_route_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./route-login/route-login.component */ "./src/app/routes/defend-route/route-login/route-login.component.ts");
 /* harmony import */ var _route_main_route_main_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./route-main/route-main.component */ "./src/app/routes/defend-route/route-main/route-main.component.ts");
 /* harmony import */ var _service_defend_guard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../service/defend.guard */ "./src/app/service/defend.guard.ts");
-/* harmony import */ var ngx_cookie_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ngx-cookie-service */ "./node_modules/ngx-cookie-service/index.js");
+/* harmony import */ var _service_leave_guard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../service/leave.guard */ "./src/app/service/leave.guard.ts");
+/* harmony import */ var ngx_cookie_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ngx-cookie-service */ "./node_modules/ngx-cookie-service/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -302,7 +304,8 @@ var DefendRoutes = [{
             {
                 path: "routeMain",
                 component: _route_main_route_main_component__WEBPACK_IMPORTED_MODULE_5__["RouteMainComponent"],
-                canActivate: [_service_defend_guard__WEBPACK_IMPORTED_MODULE_6__["DefendGuard"]]
+                canActivate: [_service_defend_guard__WEBPACK_IMPORTED_MODULE_6__["DefendGuard"]],
+                canDeactivate: [_service_leave_guard__WEBPACK_IMPORTED_MODULE_7__["LeaveGuard"]]
             },
             {
                 path: "routeLogin",
@@ -325,7 +328,7 @@ var DefendRouteModule = /** @class */ (function () {
                 _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(DefendRoutes),
             ],
             declarations: [_defend_route_component__WEBPACK_IMPORTED_MODULE_2__["DefendRouteComponent"], _route_login_route_login_component__WEBPACK_IMPORTED_MODULE_4__["RouteLoginComponent"], _route_main_route_main_component__WEBPACK_IMPORTED_MODULE_5__["RouteMainComponent"]],
-            providers: [_service_defend_guard__WEBPACK_IMPORTED_MODULE_6__["DefendGuard"], ngx_cookie_service__WEBPACK_IMPORTED_MODULE_7__["CookieService"]]
+            providers: [_service_defend_guard__WEBPACK_IMPORTED_MODULE_6__["DefendGuard"], _service_leave_guard__WEBPACK_IMPORTED_MODULE_7__["LeaveGuard"], ngx_cookie_service__WEBPACK_IMPORTED_MODULE_8__["CookieService"]]
         })
     ], DefendRouteModule);
     return DefendRouteModule;
@@ -416,7 +419,7 @@ module.exports = "p{\r\n  /*animation: move 1.5s linear infinite;*/\r\n  font-si
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>这是主要内容页面</p>\n"
+module.exports = "<p>这是主要内容页面</p>\n\n"
 
 /***/ }),
 
@@ -445,12 +448,16 @@ var RouteMainComponent = /** @class */ (function () {
     function RouteMainComponent() {
     }
     RouteMainComponent.prototype.ngOnInit = function () {
+        console.log(this.fun('我是泛型'));
+    };
+    RouteMainComponent.prototype.fun = function (args) {
+        return args;
     };
     RouteMainComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-route-main',
             template: __webpack_require__(/*! ./route-main.component.html */ "./src/app/routes/defend-route/route-main/route-main.component.html"),
-            styles: [__webpack_require__(/*! ./route-main.component.css */ "./src/app/routes/defend-route/route-main/route-main.component.css")]
+            styles: [__webpack_require__(/*! ./route-main.component.css */ "./src/app/routes/defend-route/route-main/route-main.component.css")],
         }),
         __metadata("design:paramtypes", [])
     ], RouteMainComponent);
@@ -507,6 +514,53 @@ var DefendGuard = /** @class */ (function () {
             ngx_cookie_service__WEBPACK_IMPORTED_MODULE_1__["CookieService"]])
     ], DefendGuard);
     return DefendGuard;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/service/leave.guard.ts":
+/*!****************************************!*\
+  !*** ./src/app/service/leave.guard.ts ***!
+  \****************************************/
+/*! exports provided: LeaveGuard */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LeaveGuard", function() { return LeaveGuard; });
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+//路由的反激活守卫
+/*
+* 1.CanDeactivate接口有一个范型，指定当前组件的类型。
+* 2.CanDeactivate方法第一个参数就是接口指定的范型类型的组件，根据这个要保护的组件的状态，或者调用方法来决定用户是否能够离开。
+* */
+var LeaveGuard = /** @class */ (function () {
+    function LeaveGuard(router) {
+        this.router = router;
+    }
+    LeaveGuard.prototype.canDeactivate = function (component) {
+        var flag = window.confirm("你确定要离开吗?");
+        return flag;
+    };
+    LeaveGuard = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_0__["Router"]])
+    ], LeaveGuard);
+    return LeaveGuard;
 }());
 
 
